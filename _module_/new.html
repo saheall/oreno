@@ -1,0 +1,19 @@
+<ul class="item-list">
+	<{section name=i loop=$new_item.list max=4}>
+		<li>
+			<div class="item-icon">
+				<!--<{if $new_item.list[i].is_soldout}>
+					<p class="item-soldout">SOLD OUT</p>
+				<{/if}>-->
+			</div>
+			<div class="item-list-image">
+				<a href="<{$new_item.list[i].url}>"><img src="<{$new_item.list[i].image_L}>" alt=""></a>
+			</div>
+			<p class="item-name"><a href="<{$new_item.list[i].url}>"><{$new_item.list[i].name}></a></p>
+			<{if $new_item.list[i].special_display}>
+				<p class="item-sdisplay"><{$new_item.list[i].special_display}></p>
+			<{/if}>
+			<div class="price">¡ï<{$new_item.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></div>
+		</li>
+	<{/section}>
+</ul>

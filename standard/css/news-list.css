@@ -1,0 +1,137 @@
+.main {
+	margin-left: 48px;
+}
+.news-category-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.news-list-date-s {
+	font-size: 16px;
+	color: #000;
+}
+.news-list-detail {
+	font-size: 16px;
+	padding-top: 16px;
+	padding-bottom: 32px;
+	padding-right: 24px;
+}
+.news-list-unit-s {
+
+}
+.news-hr {
+	width: 100%;
+  margin: 8px 0 48px;
+  border-top: 1px solid #000;
+}
+.news-hr-gray {
+	width: calc(100% - 48px);
+  margin: 0 auto;
+  border-top: 1px solid #b3b3b3;
+}
+.news-list li {
+	padding-top: 0;
+	padding-bottom: 32px;
+}
+.news-list-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 24px;
+}
+.news-list-item {
+	position: relative;
+}
+.news-list-title {
+	margin-bottom: 0;
+}
+.news-data {
+	display: flex;
+	align-items: center;
+}
+.news-tag {
+  width: auto;
+  min-width: 106px;
+  height: 20px;
+  background: #B3B3B3;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 0 8px;
+	font-size: 12px;
+	margin-left: 16px;
+	transition: 0s;
+}
+.news-list li {
+	position: relative;
+}
+.news-list-arrow {
+	position: absolute;
+	top: 36px;
+	right: 32px;
+}
+.news-hr-gray {
+	width: calc(100% - 96px);
+	margin: 0 auto 0 32px;
+}
+.cot-pc {
+	display: block;
+}
+.cot-sp {
+	display: none;
+}
+
+@media screen and (max-width: 1024px){
+	.main {
+		margin-left: 0;
+	}
+  .news-list li {
+    padding-bottom: 24px;
+  }
+  .news-list-detail {
+    padding-bottom: 24px;
+  }
+	.news-list-arrow {
+		position: absolute;
+		top: 31px;
+		right: 8px;
+	}
+	.news-hr-gray {
+		width: calc(100% - 24px);
+		margin: 0 auto 0 12px;
+	}
+	.cot-pc {
+		display: none;
+	}
+	.cot-sp {
+		display: block;
+	}
+	.news-list-pager .current {
+		display: block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border: 1px solid #c4c4c4;
+		border-radius: 4px;
+		margin: 0 4px;
+		color: #000;
+		font-family: 'Noto Sans';
+	}
+	.news-list-pager .pglink {
+		display: block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border: 1px solid #c4c4c4;
+		border-radius: 4px;
+		margin: 0 4px;
+		color: #b3b3b3;
+	}
+	.news-list-pager .pglink span {
+		font-family: 'Noto Sans';
+	}
+	.pgt {
+		margin-bottom: 40px;
+	}
+}

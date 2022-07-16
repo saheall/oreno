@@ -1,0 +1,18 @@
+<div class="top-review-area">
+	<{section name=i loop=$review_item.list max=6}>
+		<div class="review-tbl">
+			<table class="review-tbl">
+				<tr>
+					<td class="review-tbl-td-img">
+						<a href="<{$review_item.list[i].url}>" class="review-list-tbl-td-image-size"><img src="<{$review_item.list[i].image_S}>" alt="<{$review_item.list[i].name}>"></a>
+					</td>
+					<td class="review-tbl-td-name">
+						<a href="<{$review_item.list[i].url}>"><{$review_item.list[i].name}></a>
+						<{$review_item.list[i].star_html}>
+					</td>
+				</tr>
+			</table>
+			<div class="review-tbl-td-con"><{$review_item.list[i].content}></div>
+		</div>
+	<{/section}>
+</div>

@@ -1,0 +1,144 @@
+.main {
+	margin-left: 48px;
+}
+.main-section {
+	margin-top: 60px;
+  margin-right: 32px;
+}
+.guide-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.section-hr {
+	width: 100%;
+	margin: 8px 0 40px;
+	border-top: 1px solid #000;
+}
+.alink-contents {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0px;
+  row-gap: 20px;
+}
+.guide-alink {
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    text-align: center;
+}
+.guide-alink-margin {
+    margin-right: 24px;
+}
+.clear {
+    clear: both;
+}
+.guide-title-box {
+    margin-top: 52px;
+}
+.guide-title-box2 {
+    margin-top: 100px;
+}
+.guide-title-box-line {
+    float: left;
+    width: 4px;
+    height: 24px;
+    background-color: #000;
+}
+.guide-title-box-title {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 24px;
+		/* アンカーリンク */
+		margin-top: -100px;
+		padding-top: 100px;
+}
+.guide-title-box-txt {
+    font-size: 16px;
+    margin-top: 36px;
+}
+.guide-title-box-txt a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.guide-table-wrap {
+	display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 20px;
+}
+.guide-table-title {
+	margin: 72px 0 40px;
+	font-weight: bold;
+}
+.guide-table {
+	font-size: 16px;
+	margin-right: 20px;
+}
+.guide-table table thead {
+	border-bottom: 1px solid #000;
+}
+.guide-table table thead th {
+	padding: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+.guide-table table tbody tr:nth-child(2n) {
+	background: #f0f0f0;
+}
+.guide-table table tbody tr td {
+	width: 128px;
+	padding: 16px;
+	text-align: center;
+	border-right: 1px solid #fff;
+}
+@media screen and (max-width: 1024px) {
+	.main {
+		margin-left: 0;
+	}
+  .main-section {
+    margin: 0;
+  }
+	.alink-contents {
+		gap: 0;
+	}
+	.section-hr {
+			width: 100%;
+			margin-bottom: 24px;
+			margin-top: 16px;
+	}
+	.guide-alink-margin {
+			margin-right: 12px;
+	}
+	.guide-alink {
+		margin-top: 16px;
+	}
+	.guide-table-wrap {
+		flex-direction: column;
+	}
+	.guide-table {
+		margin-right: 0;
+	}
+	.guide-table table {
+		width: 100%;
+	}
+	.guide-table table thead th {
+		padding: 18px 12px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.guide-table table tbody tr td {
+		width: 128px;
+		padding: 16px;
+		text-align: center;
+		border-right: 1px solid #fff;
+		font-size: 14px;
+	}
+}

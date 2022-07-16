@@ -1,0 +1,29 @@
+<div class="checked-contents">
+	<ul class="checked-item-list">
+		<{section name=i loop=$recently_item.list max=4}>
+			<li>
+				<div class="item-icon">
+					<!--<{if $recently_item.list[i].is_soldout}>
+						<p class="item-soldout">SOLD OUT</p>
+					<{elseif $recently_item.list[i].is_sale}>
+						<p class="item-sale">SALE</p>
+					<{/if}>-->
+				</div>
+				<div class="item-list-image">
+					<a href="<{$recently_item.list[i].url}>"><img src="<{$recently_item.list[i].image_L}>" alt=""></a>
+				</div>
+				<p class="item-name" style="text-align: left;"><a href="<{$recently_item.list[i].url}>"><{$recently_item.list[i].name}></a></p>
+				<{if $recently_item.list[i].special_display}>
+					<p class="item-sdisplay"><{$recently_item.list[i].special_display}></p>
+				<{/if}>
+				<{if $recently_item.list[i].is_sale}>
+					<p class="price original-price" style="text-align: left;">¡ï<{$recently_item.list[i].original_price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
+					<p class="price item-sale-price" style="text-align: left;">¡ï<{$recently_item.list[i].price|number_format}><span class="tax">¡ÊÀÇ¹þ¡Ë</span>
+					<span class="sale-discount-rate">[<{$recently_item.list[i].sale_rate}>%OFF</span>]</p>
+				<{else}>
+					<p class="price" style="text-align: left;">¡ï<{$recently_item.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
+				<{/if}>
+			</li>
+		<{/section}>
+	</ul>
+</div>

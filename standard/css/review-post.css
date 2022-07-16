@@ -1,0 +1,33 @@
+.main-section {
+	align-items: center;
+}
+.category-title-name {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 32px 0 40px;
+}
+.section-hr {
+	margin: 2px 32px 80px 40px;
+	border-top: 1px solid #000;
+}
+.review-item-wrap {
+	margin: 0 32px 60px 40px;
+}
+.review-post-btn {
+	background-color: #000;
+}
+@media screen and (max-width: 1024px) {
+	.contents {
+		padding-top: 98px;
+	}
+	.category-title-name {
+		margin: 32px 0 0 0;
+		width: 100%;
+	}
+	.section-hr {
+		margin: 16px 0 0 0;
+	}
+	.review-item-wrap {
+		margin: 51px 0 60px 0;
+	}
+}

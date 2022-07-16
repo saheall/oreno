@@ -1,0 +1,29 @@
+<{if $item.group.has_item}>
+<ul class="item-list">
+	<{section name=i loop=$item.group.list max=4}>
+		<li>
+			<div class="item-icon">
+				<!--<{if $item.group.list[i].is_soldout}>
+					<p class="item-soldout">SOLD OUT</p>
+				<{elseif $item.group.list[i].is_sale}>
+					<p class="item-sale">SALE</p>
+				<{/if}>-->
+			</div>
+			<div class="item-list-image">
+				<a href="<{$item.group.list[i].url}>"><img src="<{$item.group.list[i].image_L}>" alt=""></a>
+			</div>
+			<p class="item-name"><a href="<{$item.group.list[i].url}>"><{$item.group.list[i].name}></a></p>
+			<{if $item.group.list[i].special_display}>
+				<p class="item-sdisplay"><{$item.group.list[i].special_display}></p>
+			<{/if}>
+			<{if $item.group.list[i].is_sale}>
+				<p class="price original-price">¡ï<{$item.group.list[i].original_price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
+				<p class="price item-sale-price">¡ï<{$item.group.list[i].price|number_format}><span class="tax">¡ÊÀÇ¹þ¡Ë</span>
+					<span class="sale-discount-rate">[<{$item.group.list[i].sale_rate}>%OFF</span>]</p>
+			<{else}>
+				<div class="price">¡ï<{$item.group.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></div>
+			<{/if}>
+		</li>
+	<{/section}>
+</ul>
+<{/if}>

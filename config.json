@@ -1,0 +1,124 @@
+{
+    "version": 1,
+    "responsive": true,
+    "module": [
+        {
+            "name": "header",
+            "description": "\u30d8\u30c3\u30c0\u30fc"
+        },
+        {
+            "name": "side",
+            "description": "\u30b5\u30a4\u30c9\u30ca\u30d3"
+        },
+        {
+            "name": "footer",
+            "description": "\u30d5\u30c3\u30bf\u30fc"
+        },
+        {
+            "name": "checked",
+            "description": "\u6700\u8fd1\u30c1\u30a7\u30c3\u30af\u3057\u305f\u5546\u54c1"
+        },
+        {
+            "name": "new",
+            "description": "\u65b0\u5546\u54c1"
+        },
+        {
+            "name": "recommend",
+            "description": "\u304a\u3059\u3059\u3081\u5546\u54c1"
+        },
+        {
+            "name": "special",
+            "description": "\u30b9\u30da\u30b7\u30e3\u30eb\u5546\u54c1"
+        },
+        {
+            "name": "ranking",
+            "description": "\u30e9\u30f3\u30ad\u30f3\u30b0"
+        },
+        {
+            "name": "group",
+            "description": "\u5546\u54c1\u30b0\u30eb\u30fc\u30d7"
+        },
+        {
+            "name": "review",
+            "description": "\u5546\u54c1\u30ec\u30d3\u30e5\u30fc"
+        },
+        {
+            "name": "banner",
+            "description": "\u30d0\u30ca\u30fc"
+        },
+        {
+            "name": "column",
+            "description": "\u30b3\u30e9\u30e0"
+        },
+        {
+            "name": "reviewlist",
+            "description": "\u30ec\u30d3\u30e5\u30fc\u8868\u793a"
+        },
+        {
+            "name": "instagram",
+            "description": "Instagram"
+        },
+        {
+            "name": "fairspecials",
+            "description": "\u30d5\u30a7\u30a2\u30fb\u7279\u96c6"
+        },
+        {
+            "name": "topreview",
+            "description": "TOP\u30da\u30fc\u30b8\u7528\u30ec\u30d3\u30e5\u30fc"
+        },
+        {
+            "name": "topinfo",
+            "description": "TOP\u30da\u30fc\u30b8\u7528Information"
+        }
+    ],
+    "freepage": [
+        {
+            "page_id": "houjindantai",
+            "name": "\u6cd5\u4eba\u69d8\u30fb\u56e3\u4f53\u69d8"
+        },
+        {
+            "page_id": "endfear",
+            "name": "\u7d42\u4e86\u3057\u305f\u30d5\u30a7\u30a2"
+        },
+        {
+            "page_id": "column_template1",
+            "name": "\u30b3\u30e9\u30e0\u30c6\u30f3\u30d7\u30ec\u30fc\u30c81"
+        },
+        {
+            "page_id": "faq",
+            "name": "\u3088\u304f\u3042\u308b\u304a\u554f\u3044\u5408\u308f\u305b"
+        },
+        {
+            "page_id": "column_template2",
+            "name": "\u30b3\u30e9\u30e0\u30c6\u30f3\u30d7\u30ec\u30fc\u30c82"
+        },
+        {
+            "page_id": "column_template3",
+            "name": "\u30b3\u30e9\u30e0\u30c6\u30f3\u30d7\u30ec\u30fc\u30c83"
+        },
+        {
+            "page_id": "column_template4",
+            "name": "\u30b3\u30e9\u30e0\u30c6\u30f3\u30d7\u30ec\u30fc\u30c84"
+        },
+        {
+            "page_id": "column_template5",
+            "name": "\u30b3\u30e9\u30e0\u30c6\u30f3\u30d7\u30ec\u30fc\u30c85"
+        },
+        {
+            "page_id": "column_company",
+            "name": "\u4ffa\u306e\u682a\u5f0f\u4f1a\u793e\u3068\u306f\u30fb\u30fb\u30fb"
+        },
+        {
+            "page_id": "column_ec",
+            "name": "\u4ffa\u306e\uff25\uff23\u3068\u306f"
+        },
+        {
+            "page_id": "column_buyec",
+            "name": "\u4ffa\u306e\uff25\uff23\u3067\u8cb7\u3046\u610f\u5473"
+        },
+        {
+            "page_id": "column_chef",
+            "name": "\u30b7\u30a7\u30d5\u306e\u7d39\u4ecb"
+        }
+    ]
+}

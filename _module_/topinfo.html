@@ -1,0 +1,13 @@
+<div class="news-wrap">
+	<dl class="news-list index-news-list">
+		<{section name=i loop=$latest_news.list max=3}>
+			<dt class="news-list-item">
+				<a href="<{$latest_news.list[i].url}>" class="news-list-content">
+					<div class="news-date"><{$latest_news.list[i].date.year}>/<{$latest_news.list[i].date.month}>/<{$latest_news.list[i].date.day}></div>
+					<div class="news-tag-content"></div>
+					<p class="news-title"><{$latest_news.list[i].title}></p>
+				</a>
+			</dt>
+		<{/section}>
+	</dl>
+</div>

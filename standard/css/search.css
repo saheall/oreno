@@ -1,0 +1,137 @@
+.main-section {
+	align-items: center;
+	margin-left: 48px;
+}
+.cart-section-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.cart-hr {
+	width: 100%;
+	margin: 8px 0 46px;
+	border-top: 1px solid #000;
+}
+.section_main {
+	width: auto;
+	margin: 0 5.235vw;
+}
+.item-list {
+	display: grid;
+	flex-wrap: wrap;
+	gap: 40px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item-list li {
+	width: 105%;
+	max-width: 176px;
+	margin-bottom: unset;
+	margin-right: unset;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 176px;
+}
+.cot-pc {
+	display: block;
+}
+.cot-sp {
+	display: none;
+}
+@media screen and (max-width: 1024px) {
+	.cot-pc {
+		display: none;
+	}
+	.cot-sp {
+		display: block;
+	}
+	.main-section {
+		width: auto;
+		margin-left: 0px;
+	}
+	.section_main {
+		margin: 0;
+	}
+	.item-list {
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+	}
+	.item-list li {
+		width: 105% !important;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: unset;
+		position: relative;
+	}
+}
+.pager_next {
+	position: relative;
+    top: -23px;
+}
+.category-title {
+	margin: 0 4.8vw 40px 5.3vw;
+}
+@media screen and (max-width: 1024px) {
+	.category-title {
+		margin: 0 0 28px 0;
+	}
+}
+.category-title dl {
+	margin: 0 0 0 auto;
+}
+@media screen and (max-width: 1024px) {
+	.category-title dl {
+		margin: 0 0 0 auto;
+		float: right;
+	}
+	.search-list-pager .current {
+		display: block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border: 1px solid #c4c4c4;
+		border-radius: 4px;
+		margin: 0 4px;
+		color: #000;
+	}
+	.search-list-pager .pglink {
+		display: block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		border: 1px solid #c4c4c4;
+		border-radius: 4px;
+		margin: 0 4px;
+		color: #b3b3b3;
+	}
+	.pgt {
+		margin-top: 24px;
+		margin-bottom: 40px;
+	}
+}
+.category-title dl dt {
+	height: 32px;
+	line-height: 32px;
+	margin-right: 16px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Noto Sans JP";
+}
+.category-title dl dd {
+	width: 72px;
+	height: 32px;
+	border: 1px solid #c4c4c4;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 32px;
+	margin-right: 16px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Noto Sans JP";
+}
+.category-title dl dd:last-child {
+	margin-right: 0px;
+}
+.news-left-cont {
+	top: 8px;
+}

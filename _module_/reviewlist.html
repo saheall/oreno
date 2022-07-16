@@ -1,0 +1,28 @@
+<{if $review_item.has_item}>
+	<section class="review-section">
+		<div class="main-section-title-en">Review</div>
+		<div class="main-section-title-jp">お客様の声</div>
+		<ul class="index-review-list">
+			<{section name=i loop=$review_item.list max=6}>
+				<table class="review-list-tbl">
+					<tr>
+						<td class="review-list-tbl-td-image">
+							<a href="<{$review_item.list[i].url}>"><img src="<{$review_item.list[i].image_S}>" alt="<{$review_item.list[i].name}>" class="review-list-tbl-td-image-size"></a>
+						</td>
+						<td class="review-list-tbl-td-name">
+							<p class="review-list-name" ><a href="<{$review_item.list[i].url}>"><{$review_item.list[i].name}></a></p>
+							<div class="review-index-score">
+								<div class="review-star"><{$review_item.list[i].star_html}></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="review-list-tbl-td-content">
+							<div class="review-list-content"><{$review_item.list[i].content}></div>
+						</td>
+					</tr>
+				</table>
+			<{/section}>
+		</ul>
+	</section>
+<{/if}>
