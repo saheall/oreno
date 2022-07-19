@@ -1210,9 +1210,9 @@
 		top: unset !important;
 	}
 	.fnavi-sub-price-area {
-		margin: 5px 16px 2px auto;
+		margin: 5px 14px 2px auto;
 		display: grid;
-		grid-template-columns: 150px 115px;
+		grid-template-columns: 115px 120px;
 		width: fit-content;
 	}
 	.fnavi-sub-time {
@@ -1225,13 +1225,13 @@
 		padding-top: 4px;
 	}
 	.fnavi-sub-price {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 		color: #dc3333;
 		padding-left: 8px;
 	}
 	.fnavi-sub-price-p {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 		padding-left: 8px;
 	}
