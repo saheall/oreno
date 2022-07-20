@@ -22,7 +22,7 @@
 <body>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v14.0" nonce="vSEL2ajC"></script>
-<!-- �ȥåפ����ܥ��� -->
+<!-- トップに戻るボタン -->
 <{if $item.is_subscription_only}>
 	<a href="#" class="back-to-top js-to-top back-sub"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 <{else}>
@@ -33,7 +33,7 @@
 	<div class="fnavi-sub">
 		<div class="spcon">
 			<div class="item-quantity-sp">
-				<div>����</div>
+				<div>数量</div>
 				<div class="item-quantity-sp-detail">
 					<div class="spinner_down-wrap"><input type="button" name="spinner_down" class="spinner_down" value=""></div>
 					<input class="quantity" type="text" name="quantity" data-id="<{$item.quantity_id}>" value="1" tabindex="1">
@@ -42,26 +42,26 @@
 			</div>
 		</div>
 		<{if $item.subscription_discount.has_item}>
-			<!--�����������ꤷ�Ƥ�����-->
+			<!--回数割引を設定している場合-->
 			<div class="fnavi-sub-price-area">
 				<{section name=i loop=$item.subscription_discount.list}>
 					<{if $item.subscription_discount.list[i].times == '1'}>
-						<div class="fnavi-sub-time">������̲���</div>
-						<div class="fnavi-sub-price">1,609<span> �ߡ��ǹ���</span></div>
+						<div class="fnavi-sub-time">初回特別価格</div>
+						<div class="fnavi-sub-price">1,609<span> 円（税込）</span></div>
 					<{else}>
-						<div class="fnavi-sub-time-p"><{$item.subscription_discount.list[i].times}>���ܰʹ��̾����</div>
-						<div class="fnavi-sub-price-p">3,218<span> �ߡ��ǹ���</span></div>
+						<div class="fnavi-sub-time-p"><{$item.subscription_discount.list[i].times}>回目以降通常価格</div>
+						<div class="fnavi-sub-price-p">3,218<span> 円（税込）</span></div>
 					<{/if}>
 				<{/section}>
 			</div>
-			<a href="<{$item.cart_entry_subscription_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">�����������</a>
+			<a href="<{$item.cart_entry_subscription_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">定期購入する</a>
 		<{/if}>
 	</div>
 <{else}>
 	<div class="fnavi">
 		<div class="spcon">
 			<div class="item-quantity-sp">
-				<div>����</div>
+				<div>数量</div>
 				<div class="item-quantity-sp-detail">
 					<div class="spinner_down-wrap"><input type="button" name="spinner_down" class="spinner_down" value=""></div>
 					<input class="quantity" type="text" name="quantity" data-id="<{$item.quantity_id}>" value="1" tabindex="1">
@@ -69,12 +69,12 @@
 				</div>
 			</div>
 		</div>
-		<p class="item-price"><{$item.price_html}><span class="item-tax">&nbsp;�ߡ��ǹ���</span></p>
+		<p class="item-price"><{$item.price_html}><span class="item-tax">&nbsp;円（税込）</span></p>
 		<{if $item.is_soldout}>
-			<a href="<{$item.restock_url}>" class="btn item-soldout">�����٤Τ��Τ餻��������</a>
-			<!--<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">����ڤ�</a>-->
+			<a href="<{$item.restock_url}>" class="btn item-soldout">再入荷のお知らせを受け取る</a>
+			<!--<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">売り切れ</a>-->
 		<{else}>
-			<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">�����Ȥ��ɲ�</a>
+			<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn cart-order-btn" data-button-id="cart-order">カートに追加</a>
 		<{/if}>
 	</div>
 <{/if}>
@@ -85,7 +85,7 @@
 	<{section name=i loop=$item.breadcrumb_list_group.list max=1}>
 		<{if $item.breadcrumb_list_group.list[i].has_item}>
 			<div class="breadcrumb-area">
-				<div class="breadcrumb mgn-b"> <span class="breadcrumb-item"><a href="<{$url.top}>">�ۡ���</a></span>
+				<div class="breadcrumb mgn-b"> <span class="breadcrumb-item"><a href="<{$url.top}>">ホーム</a></span>
 					<{section name=j loop=$item.breadcrumb_list_group.list[i].list}>
 						<span class="breadcrumb-item"><a href="<{$item.breadcrumb_list_group.list[i].list[j].url}>"><{$item.breadcrumb_list_group.list[i].list[j].name}></a></span>
 					<{/section}>
@@ -99,7 +99,7 @@
 		<{$module.side}>
 			<div class="detail">
 				<div>
-					<!--�������䥹�ơ�����-->
+					<!--商品販売ステータス-->
 					<{if $item.icon.has_item}><{/if}>
 					<div class="item-detail-icon">
 						<!--<{if $item.is_soldout}>
@@ -108,7 +108,7 @@
 							<p class="item-detail-sale">SALE</p>
 						<{/if}>-->
 					</div>
-					<!--����̾-->
+					<!--商品名-->
 					<div class="item-title">
 						<div class="item-box-name">
 							<{$item.name}>
@@ -120,7 +120,7 @@
 						</div>
 					</div>
 					<div class="item-detail-wrap">
-						<!--���ʲ���-->
+						<!--商品画像-->
 						<div class="item-detail-main-image">
 							<ul class="gallery">
 								<li>
@@ -132,9 +132,9 @@
 								</li>
 							</ul>
 						</div>
-						<!--���ʾ���-->
+						<!--商品情報-->
 						<div class="item-detail">
-							<!--���ʲ���-->
+							<!--商品価格-->
 							<ul class="item-icon-list">
 								<{section name=i loop=$item.icon.list}>
 									<li><img src="<{$item.icon.list[i].image_url}>" alt=""></li>
@@ -147,126 +147,126 @@
 							<div class="item-price-wrap">
 								<{if $item.is_subscription}>
 									<{if $item.is_subscription_only}>
-										<!--����������ʤξ��-->
+										<!--定期購入商品の場合-->
 										<{if $item.subscription_discount.has_item}>
-											<!--�����������ꤷ�Ƥ�����-->
-											<div class="item-sub-ttl">�����������</div>
+											<!--回数割引を設定している場合-->
+											<div class="item-sub-ttl">定期購入価格</div>
 											<div class="item-sub-price-area">
 												<{section name=i loop=$item.subscription_discount.list}>
 													<{if $item.subscription_discount.list[i].times == '1'}>
-														<div class="item-sub-time">������̲���</div>
-														<div class="item-sub-price"><{$item.subscription_discount.list[i].price|number_format}><span> �ߡ��ǹ���</span></div>
+														<div class="item-sub-time">初回特別価格</div>
+														<div class="item-sub-price"><{$item.subscription_discount.list[i].price|number_format}><span> 円（税込）</span></div>
 													<{else}>
-														<div class="item-sub-time-p"><{$item.subscription_discount.list[i].times}>���ܰʹ��̾����</div>
-														<div class="item-sub-price-p"><{$item.subscription_discount.list[i].price|number_format}><span> �ߡ��ǹ���</span></div>
+														<div class="item-sub-time-p"><{$item.subscription_discount.list[i].times}>回目以降通常価格</div>
+														<div class="item-sub-price-p"><{$item.subscription_discount.list[i].price|number_format}><span> 円（税込）</span></div>
 													<{/if}>
 												<{/section}>
 											</div>
 											<div class="sub-txt">
-												�����Τ��Ϥ�������1������ˤ��Ϥ����ޤ���<br>
-												��AmazonPay�ǤϤ���ʧ���Ǥ��ޤ���<br>
-												�����쥸�åȥ����ɷ�����ѤȤʤ�ޤ���
+												・初回のお届け日から1か月おきにお届けします。<br>
+												・AmazonPayではお支払いできません。<br>
+												・クレジットカード決済専用となります。
 											</div>
 										<{else}>
 											<div class="item-price-wrap">
-												<p class="item-price"><span>�����������</span>��
+												<p class="item-price"><span>定期購入価格</span>￥
 													<{$item.subscription_price_html}>
 												</p>
 											</div>
 										<{/if}>
 										<{if $item.subscription_gift.has_item}>
-											<!--��������򤷤Ƥ�����-->
+											<!--景品設定をしている場合-->
 											<{section name=i loop=$item.subscription_gift.list}>
 												<div class="subscription-gift"> <img src="<{$item.subscription_gift.list[i].image_url}>" alt="<{$item.subscription_gift.list[i].name}>" width="80" height="auto">
 													<p class="subscription-gift-text">
-														<{$item.subscription_gift.list[i].times}>���ܰʹߤΤ�����������
-														<{$item.subscription_gift.list[i].name}>�򺹤��夲�ޤ���<br>
+														<{$item.subscription_gift.list[i].times}>回目以降のご購入の方に
+														<{$item.subscription_gift.list[i].name}>を差し上げます！<br>
 														<{$item.subscription_gift.list[i].description}>
 													</p>
 												</div>
 											<{/section}>
 										<{/if}>
 									<{elseif $item.is_subscription}>
-										<!--�̾ﾦ�ʤ���������ξ��-->
-										<!--�����뤫�ɤ������̾ﾦ�ʤΤߡ�-->
+										<!--通常商品と定期購入の場合-->
+										<!--セールかどうか（通常商品のみ）-->
 										<{if $item.is_sale}>
-											<p class="sale-text"><span class="original">��<{$item.original_price|number_format}></span><span class="sale-rate">[<{$item.sale_rate}>��OFF]</span><span class="sale-price">��<{$item.price_html}><span class="item-tax">���ǹ���</span></span>
+											<p class="sale-text"><span class="original">￥<{$item.original_price|number_format}></span><span class="sale-rate">[<{$item.sale_rate}>％OFF]</span><span class="sale-price">￥<{$item.price_html}><span class="item-tax">（税込）</span></span>
 											</p>
 											<!--<{if $item.fixed_price}>
 												<p class="fixed-price">
-													<{$item.fixed_price_name}>��<span>��<{$item.fixed_price|number_format}></span></p>
+													<{$item.fixed_price_name}>：<span>￥<{$item.fixed_price|number_format}></span></p>
 											<{/if}>-->
 											<{if $item.has_sale_period}>
-												<p class="sale-priod">��������֡�
+												<p class="sale-priod">セール期間：
 													<{if $item.sale_start.year}>
-														<{$item.sale_start.year}>ǯ
-														<{$item.sale_start.month}>��
-														<{$item.sale_start.day}>��
+														<{$item.sale_start.year}>年
+														<{$item.sale_start.month}>月
+														<{$item.sale_start.day}>日
 													<{/if}>
 													<{if $item.sale_end.year}>
-														<{$item.sale_end.year}>ǯ
-														<{$item.sale_end.month}>��
-														<{$item.sale_end.day}>��
+														<{$item.sale_end.year}>年
+														<{$item.sale_end.month}>月
+														<{$item.sale_end.day}>日
 													<{/if}>
 												</p>
 											<{/if}>
 										<{else}>
-											<div class="product-price-block">��
-												<{$item.price_html}><small>���ǹ���</small></div>
+											<div class="product-price-block">￥
+												<{$item.price_html}><small>（税込）</small></div>
 										<{/if}>
-										<!--�����������-->
-										<p class="subscription-price">��
-											<{$item.subscription_price_html}><small>�������������</small></p>
+										<!--定期購入商品-->
+										<p class="subscription-price">￥
+											<{$item.subscription_price_html}><small>（定期購入時）</small></p>
 									<{/if}>
 								<{else}>
 									<{if $item.is_sale}>
-										<p class="sale-text"><span class="original">��<{$item.original_price|number_format}></span><span class="sale-rate">[<{$item.sale_rate}>��OFF]</span><span class="sale-price">��<{$item.price_html}><span class="item-tax">���ǹ���</span></span>
+										<p class="sale-text"><span class="original">￥<{$item.original_price|number_format}></span><span class="sale-rate">[<{$item.sale_rate}>％OFF]</span><span class="sale-price">￥<{$item.price_html}><span class="item-tax">（税込）</span></span>
 										</p>
 										<!--<{if $item.fixed_price}>
 											<p class="fixed-price">
-												<{$item.fixed_price_name}>��<span>��<{$item.fixed_price|number_format}></span></p>
+												<{$item.fixed_price_name}>：<span>￥<{$item.fixed_price|number_format}></span></p>
 										<{/if}>-->
 										<{if $item.has_sale_period}>
-											<p class="sale-priod">��������֡�
+											<p class="sale-priod">セール期間：
 											<{if $item.sale_start.year}>
-												<{$item.sale_start.year}>ǯ
-												<{$item.sale_start.month}>��
-												<{$item.sale_start.day}>��
+												<{$item.sale_start.year}>年
+												<{$item.sale_start.month}>月
+												<{$item.sale_start.day}>日
 											<{/if}>
 											<{if $item.sale_end.year}>
-												<{$item.sale_end.year}>ǯ
-												<{$item.sale_end.month}>��
-												<{$item.sale_end.day}>��
+												<{$item.sale_end.year}>年
+												<{$item.sale_end.month}>月
+												<{$item.sale_end.day}>日
 											<{/if}>
 										</p>
 									<{/if}>
 								<{else}>
 									<{if $item.is_member_price}>
-										<p class="member-original-price">�̾����<span>��<{$item.original_price|number_format}></span>���ǹ���</p>
+										<p class="member-original-price">通常価格<span>￥<{$item.original_price|number_format}></span>（税込）</p>
 									<{/if}>
-									<p class="item-price"><{$item.price_html}><span class="item-tax">�ߡ��ǹ���</span></p>
+									<p class="item-price"><{$item.price_html}><span class="item-tax">円（税込）</span></p>
 									<!--<{if $item.fixed_price}>
 										<p class="fixed-price">
-											<{$item.fixed_price_name}>��<span>��<{$item.fixed_price|number_format}></span></p>
+											<{$item.fixed_price_name}>：<span>￥<{$item.fixed_price|number_format}></span></p>
 									<{/if}>-->
 								<{/if}>
 							<{/if}>
 						</div>
 						<div class="item-quantitybox">
 							<div class="item-quantity">
-								<div>����</div>
+								<div>数量</div>
 								<div class="data-box-wrap">
 									<select id="selectss" data-id="<{$item.quantity_id}>" class="data-box">
 									</select>
 									<div class="Arrow-Bottom-item"></div>
 								</div>
 							</div>
-							<!--�ޤȤ��㤤�����-->
+							<!--まとめ買い割引額-->
 							<{if $item.is_bulk}>
 								<p class="itemd-cart-bulk"><{$item.bulk_name}></p>
 							<{/if}>
 						</div>
-						<!--̾����-->
+						<!--名入れ-->
 						<{if $item.is_name_print}>
 							<div class="nameprint-area">
 								<{if $item.name_print.has_item}>
@@ -277,7 +277,7 @@
 										<div class="nameprint-title-wrap">
 											<p class="nameprint-title">
 												<{$item.name_print.list[i].title}>
-												<{if $item.name_print.list[i].is_required}><span>��ɬ��</span>
+												<{if $item.name_print.list[i].is_required}><span>※必須</span>
 												<{/if}>
 											</p>
 										</div>
@@ -285,10 +285,10 @@
 											<p class="nameprint-text">
 												<{$item.name_print.list[i].html}>
 											</p>
-											<p class="nameprint-total">����
-												<{$item.name_print.list[i].total_max}>ʸ����
-												<{$item.name_print.list[i].row_max}>�Ԥޤ�</p>
-											<p class="nameprint-character">���Ѳ�ǽʸ����
+											<p class="nameprint-total">最大
+												<{$item.name_print.list[i].total_max}>文字／
+												<{$item.name_print.list[i].row_max}>行まで</p>
+											<p class="nameprint-character">利用可能文字：
 												<{$item.name_print.list[i].character_type}>
 											</p>
 										</div>
@@ -301,17 +301,17 @@
 								<p class="item-stock"><span class="item-stock-count"></span></p>
 							<{else}>
 								<{if $item.is_soldout}>
-									<p class="item-stock"><span class="item-stock-soldout">���ڤ�</span></p>
+									<p class="item-stock"><span class="item-stock-soldout">品切れ</span></p>
 								<{else}>
-									<p class="item-stock"><span class="item-stock-count">�Ĥꤢ�ȡ�<span class="stock-num"><{$item.stock_quantity}></span> ��</span></p>
+									<p class="item-stock"><span class="item-stock-count">残りあと　<span class="stock-num"><{$item.stock_quantity}></span> 個</span></p>
 								<{/if}>
 							<{/if}>
-							<!--�ݥ����-->
+							<!--ポイント-->
 							<{if $shop.is_point_enabled}>
 								<{if $item.is_subscription_only}>
-									<p class="item-point">�ݥ���ȼ����Բ�</p>
+									<p class="item-point">ポイント取得不可</p>
 								<{else}>
-									<p class="item-point">�ݥ���ȡ�
+									<p class="item-point">ポイント：
 										<span class="point-num"><{$item.point_html}></span>
 									</p>
 								<{/if}>
@@ -320,43 +320,43 @@
 						<div class="add-cart">
 							<div class="modal-open">
 								<{if $item.is_soldout}>
-									<a href="<{$item.restock_url}>" class="add-cart-btn btn item-soldout">�����٤Τ��Τ餻��������</a>
+									<a href="<{$item.restock_url}>" class="add-cart-btn btn item-soldout">再入荷のお知らせを受け取る</a>
 								<{else}>
 									<{if $item.subscription_discount.has_item}>
-										<a href="<{$item.cart_entry_subscription_url}>" class="add-cart-btn btn item-cart">�����������</a>
+										<a href="<{$item.cart_entry_subscription_url}>" class="add-cart-btn btn item-cart">定期購入する</a>
 									<{else}>
-										<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn item-cart">�����Ȥ��ɲ�</a>
+										<a href="<{$item.cart_entry_url}>" class="add-cart-btn btn item-cart">カートに追加</a>
 									<{/if}>
 								<{/if}>
 							</div>
 							<div class="item-bbtm-area">
-								<a href="<{$item.contact_url}>" class="item-cont">���䤤��碌</a>
-								<a href="<{$item.favorite_entry_url}>" class="item-fan">����������</a>
+								<a href="<{$item.contact_url}>" class="item-cont">お問い合わせ</a>
+								<a href="<{$item.favorite_entry_url}>" class="item-fan">お気に入り</a>
 							</div>
 							<p class="item-contact">
 								<!--<div class="fb-like" data-href="http://orenoec1.shop34.makeshop.jp/view/item/000000000260?category_page_id=matomegai" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>-->
 								<{$item.sns.facebook}>
-								<span class="fb-like-txt">ͧã�����ˡ֤����͡��פ��褦��</span>
+								<span class="fb-like-txt">友達より先に「いいね！」しよう。</span>
 							</p>
 							<{if $item.price < '10800'}>
-								<div class="price_soryo">��10,800�ߡ��ǹ��˰ʾ头����������̵��</div>
+								<div class="price_soryo">※10,800円（税込）以上ご購入で送料無料</div>
 							<{/if}>
-							<!--<div class="item-cook-txt">���嵭Ĵ�����֤ϻ��ͻ��֤Ȥʤ�ޤ����ܺ٤Ͼ��ʵ��ܤ�Ĵ����ˡ�򤴳�ǧ����������</div>-->
-							<!-- �⡼���륨�ꥢ�������� -->
+							<!--<div class="item-cook-txt">※上記調理時間は参考時間となります。詳細は商品記載の調理方法をご確認ください。</div>-->
+							<!-- モーダルエリアここから -->
 							<section class="modal-area">
 								<div class="modal-bg"></div>
 								<div class="modal-wrapper">
 									<div class="modalContents">
-										<p>���ʤ������Ȥ��ɲä���ޤ�����</p>
+										<p>商品がカートに追加されました。</p>
 										<ul class="modal-cart-btn">
-											<li class="modal-cart"> <a href="<{$url.cart}>">�����Ȥ򸫤�</a> </li>
-											<li class="modal-order"> <a href="<{$cart.order_url}>">��������³���ؿʤ�</a> </li>
+											<li class="modal-cart"> <a href="<{$url.cart}>">カートを見る</a> </li>
+											<li class="modal-order"> <a href="<{$cart.order_url}>">ご購入手続きへ進む</a> </li>
 										</ul>
 									</div>
-									<div class="modal-close"> �� </div>
+									<div class="modal-close"> × </div>
 								</div>
 							</section>
-							<!-- �⡼���륨�ꥢ�����ޤ� -->
+							<!-- モーダルエリアここまで -->
 						</div>
 					</div>
 				</div>
@@ -367,7 +367,7 @@
 				<!-- /.accordion-item -->
 				<div class="accordion-item">
 					<div class="accordion-title item-accordion-title item-accordion-title-review">
-						�����ͤ���
+						お客様の声
 					</div>
 					<!--/.accordion-title-->
 					<div class="accordion-content-review">
@@ -382,7 +382,7 @@
 				<!-- /.accordion-item -->
 				<div class="accordion-item">
 					<div class="accordion-title item-accordion-title">
-						���ξ��ʤ˴�Ϣ���뾦��
+						この商品に関連する商品
 					</div>
 					<!--/.accordion-title-->
 					<div class="accordion-content">
@@ -394,7 +394,7 @@
 				<!-- /.accordion-item -->
 				<div class="accordion-item">
 					<div class="accordion-title item-accordion-title">
-						�Ƕ�����å���������
+						最近チェックした商品
 					</div>
 					<!--/.accordion-title-->
 					<div class="accordion-content">
@@ -406,7 +406,7 @@
 				<!-- /.accordion-item -->
 				<div class="accordion-item">
 					<div class="accordion-title item-accordion-title">
-						��������ξ���
+						おすすめの商品
 					</div>
 					<!--/.accordion-title-->
 					<div class="accordion-content">
@@ -426,20 +426,20 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
 $(function () {
-  // �ǽ�Υ���ƥ�İʳ�����ɽ��
+  // 最初のコンテンツ以外は非表示
   $(".accordion-content-review").css("display", "block");
-  // ����θ������Ѥ��Ƥ���
+  // 矢印の向きを変えておく
   $(".item-accordion-title-review").addClass("open");
  
-	// �����ȥ�򥯥�å������
+	// タイトルをクリックすると
 	$(".item-accordion-title").on("click", function () {
-	// ����å����������ȥ�ʳ���open���饹�򳰤�(�ݤ���ܤˤ���)
+	// クリックしたタイトル以外のopenクラスを外す(－から＋にする)
 		//$(".item-accordion-title").not(this).removeClass("open");
-		// ����å����������ȥ�ʳ��Υ���ƥ�Ĥ��Ĥ���
+		// クリックしたタイトル以外のコンテンツを閉じる
 		//$(".item-accordion-title").not(this).next().slideUp(300);
-		// ����å����������ȥ��open���饹���դ��������ơܤȡݤ��ڤ��ؤ���
+		// クリックしたタイトルにopenクラスを付け外しして＋と－を切り替える
 		$(this).toggleClass("open");
-		// ����å����������ȥ�μ�������(����ƥ��)����
+		// クリックしたタイトルの次の要素(コンテンツ)を開閉
 		$(this).next().slideToggle(300);
 	});
 });

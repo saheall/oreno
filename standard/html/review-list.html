@@ -25,8 +25,8 @@
     <div class="contents">
 
         <div class="breadcrumb">
-            <span class="breadcrumb-item"><a href="<{$url.top}>">•€°º•‡</a></span>
-            <span class="breadcrumb-item current"><{$item.name}>§Œ•Ï•”•Â°º∞ÏÕ˜</span>
+            <span class="breadcrumb-item"><a href="<{$url.top}>">„Éõ„Éº„É†</a></span>
+            <span class="breadcrumb-item current"><{$item.name}>„ÅÆ„É¨„Éì„É•„Éº‰∏ÄË¶ß</span>
         </div>
 
         <div class="container">
@@ -36,10 +36,10 @@
             <main class="main">
                 <section class="main-section">
                     <div class="category-title">
-                        <h2 class="review-category-title"><{$item.name}>§Œ•Ï•”•Â°º∞ÏÕ˜</h2>
+                        <h2 class="review-category-title"><{$item.name}>„ÅÆ„É¨„Éì„É•„Éº‰∏ÄË¶ß</h2>
                     </div>
 
-                    <!--•Ï•”•Â°º•¢•§•∆•‡-->
+                    <!--„É¨„Éì„É•„Éº„Ç¢„Ç§„ÉÜ„É†-->
                     <div class="review-item-wrap">
                         <div class="review-item-image">
                             <a href="<{$item.url}>"><img src="<{$item.image_S}>" alt="<{$item.name}>"></a>
@@ -51,18 +51,18 @@
                             <div class="total-review">
                                 <div class="review-star"><{$review.star_html}></div>
                                 <p class="review-average"><{$review.average}></p>
-                                <p class="review-count">° <{$review.total_count}>∑Ô°À</p>
+                                <p class="review-count">Ôºà<{$review.total_count}>‰ª∂Ôºâ</p>
                             </div>
                             <{/if}>
                         </div>
                     </div>
 
-                    <!--•Ï•”•Â°º∞ÏÕ˜-->
+                    <!--„É¨„Éì„É•„Éº‰∏ÄË¶ß-->
                     <{if $review.has_item}>
                     <ul class="item-review-list all-review">
                         <{section name=i loop=$review.list}>
                         <li class="review-list-unit">
-                            <p class="review-name"><span><{$review.list[i].reviewer_name}></span>§µ§Û</p>
+                            <p class="review-name"><span><{$review.list[i].reviewer_name}></span>„Åï„Çì</p>
                             <div class="star-score">
                                 <div class="review-star"><{$review.list[i].star_html}></div>
                                 <p class="review-score"><{$review.list[i].score}></p>
@@ -73,14 +73,14 @@
                         <{/section}>
                     </ul>
     
-                    <!--•⁄°º•∏•„°º-->
+                    <!--„Éö„Éº„Ç∏„É£„Éº-->
                     <div class="pager-wrap">
-                        <p class="total-count">° ¡¥<span><{$review.total_count}></span>∑Ô°À<{$review.display_count}>∑Ô…Ωº®</p>
+                        <p class="total-count">ÔºàÂÖ®<span><{$review.total_count}></span>‰ª∂Ôºâ<{$review.display_count}>‰ª∂Ë°®Á§∫</p>
                         <{if $review.pager.has_item}>
     
                         <ul class="pager">
                             <{if !$review.pager.is_first_display}>
-                                <li><a href="<{$review.pager.first_url}>"><span class="prev">∞Ï»÷¡∞§ÿ</span></a></li>
+                                <li><a href="<{$review.pager.first_url}>"><span class="prev">‰∏ÄÁï™Ââç„Å∏</span></a></li>
                             <{/if}>
     
                             <{section name=i loop=$review.pager.list}>
@@ -92,19 +92,19 @@
                             <{/section}>
     
                             <{if !$review.pager.is_last_display}>
-                                <li><a href="<{$review.pager.last_url}>"><span class="next">∫«∏Â§ÿ</span></a></li>
+                                <li><a href="<{$review.pager.last_url}>"><span class="next">ÊúÄÂæå„Å∏</span></a></li>
                             <{/if}>
                         </ul>
                         <{/if}>
                     </div>
     
                     <{else}>
-                        <p class="empty">§≥§Œæ¶… §Œ•Ï•”•Â°º§œ§ﬁ§¿§¢§Í§ﬁ§ª§Û</p>
+                        <p class="empty">„Åì„ÅÆÂïÜÂìÅ„ÅÆ„É¨„Éì„É•„Éº„ÅØ„Åæ„Å†„ÅÇ„Çä„Åæ„Åõ„Çì</p>
                     <{/if}>
     
-                    <!--•Ï•”•Â°º≈Íπ∆-->
+                    <!--„É¨„Éì„É•„ÉºÊäïÁ®ø-->
                     <p class="review-post">
-                        <a href="<{$review.post_url}>">•Ï•”•Â°º§ÚΩÒ§Ø</a>
+                        <a href="<{$review.post_url}>">„É¨„Éì„É•„Éº„ÇíÊõ∏„Åè</a>
                     </p>
                 
                 </section>

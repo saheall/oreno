@@ -25,7 +25,7 @@
     <div class="contents">
 
         <div class="breadcrumb">
-            <span class="breadcrumb-item"><a href="<{$url.top}>">•€°º•‡</a></span>
+            <span class="breadcrumb-item"><a href="<{$url.top}>">„Éõ„Éº„É†</a></span>
             <span class="breadcrumb-item current"><{$bulk.name}></span>
         </div>
 
@@ -39,15 +39,15 @@
                     <div class="category-title">
                         <h2><{$bulk.name}></h2>
                         <dl class="list-head-sort">
-                            <dt> ¬§”¬ÿ§®°ß</dt>
-                            <dd><a href="<{$bulk.sort_low_price_url}>">≤¡≥ §Œƒ„§§ΩÁ</a></dd>
-                            <dd><a href="<{$bulk.sort_high_price_url}>">≤¡≥ §Œπ‚§§ΩÁ</a></dd>
-                            <dd><a href="<{$bulk.sort_recommend_url}>">§™§π§π§·ΩÁ</a></dd>
-                            <dd><a href="<{$bulk.sort_new_url}>">ø∑√ÂΩÁ</a></dd>
+                            <dt>‰∏¶„Å≥Êõø„ÅàÔºö</dt>
+                            <dd><a href="<{$bulk.sort_low_price_url}>">‰æ°Ê†º„ÅÆ‰Ωé„ÅÑÈ†Ü</a></dd>
+                            <dd><a href="<{$bulk.sort_high_price_url}>">‰æ°Ê†º„ÅÆÈ´ò„ÅÑÈ†Ü</a></dd>
+                            <dd><a href="<{$bulk.sort_recommend_url}>">„Åä„Åô„Åô„ÇÅÈ†Ü</a></dd>
+                            <dd><a href="<{$bulk.sort_new_url}>">Êñ∞ÁùÄÈ†Ü</a></dd>
                         </dl>
                     </div>
 
-                    <!--•ª•√•»≥‰∞˙-->
+                    <!--„Çª„ÉÉ„ÉàÂâ≤Âºï-->
                     <{if $bulk.is_set_discount}>
                         <div class="bulk-group">
                             <{if $bulk.is_group1_current}>
@@ -55,7 +55,7 @@
                             <{else}>
                                 <a href="<{$bulk.group1_url}>"><{$bulk.group1_name}></a>
                             <{/if}>
-                            °ø
+                            Ôºè
                             <{if $bulk.is_group2_current}>
                                 <{$bulk.group2_name}>
                             <{else}>
@@ -64,7 +64,7 @@
                         </div>
                     <{/if}>
 
-                    <!--§ﬁ§»§·«„§§≥‰∞˙•¢•§•∆•‡-->
+                    <!--„Åæ„Å®„ÇÅË≤∑„ÅÑÂâ≤Âºï„Ç¢„Ç§„ÉÜ„É†-->
                     <{if $bulk.item.has_item}>
 
                     <ul class="item-list">
@@ -86,30 +86,30 @@
                             <{/if}>
                             <p class="item-name"><a href="<{$bulk.item.list[i].url}>"><{$bulk.item.list[i].name}></a></p>
                             <{if $bulk.item.list[i].is_sale}>
-                                <p class="price original-price">°Ô<{$bulk.item.list[i].original_price|number_format}><span>° ¿«π˛°À</span></p>
-                                <p class="price item-sale-price">°Ô<{$bulk.item.list[i].price|number_format}><span class="tax">° ¿«π˛°À</span>
+                                <p class="price original-price">Ôø•<{$bulk.item.list[i].original_price|number_format}><span>ÔºàÁ®éËæºÔºâ</span></p>
+                                <p class="price item-sale-price">Ôø•<{$bulk.item.list[i].price|number_format}><span class="tax">ÔºàÁ®éËæºÔºâ</span>
                                 <span class="sale-discount-rate">[<{$bulk.item.list[i].sale_rate}>%OFF</span>]</p>
                             <{else}>
-                                <p class="price">°Ô<{$bulk.item.list[i].price|number_format}><span>° ¿«π˛°À</span></p>
+                                <p class="price">Ôø•<{$bulk.item.list[i].price|number_format}><span>ÔºàÁ®éËæºÔºâ</span></p>
                             <{/if}>
                             <div class="item-list-cart">
                                 <{if $bulk.item.list[i].is_soldout}>
-                                    <div class="item-list-sold item-list-btn">«‰§Í¿⁄§Ï</div>
+                                    <div class="item-list-sold item-list-btn">Â£≤„ÇäÂàá„Çå</div>
                                 <{else}>
-                                    <a href="<{$bulk.item.list[i].cart_entry_url}>" class="item-list-btn add-list-cart cart-order-btn">•´°º•»§À∆˛§Ï§Î</a>
+                                    <a href="<{$bulk.item.list[i].cart_entry_url}>" class="item-list-btn add-list-cart cart-order-btn">„Ç´„Éº„Éà„Å´ÂÖ•„Çå„Çã</a>
                                 <{/if}>
                             </div>
                         </li>
                     <{/section}>
                     </ul>
 
-                    <!--•⁄°º•∏•„°º-->
+                    <!--„Éö„Éº„Ç∏„É£„Éº-->
                     <div class="pager-wrap">
-                        <p class="total-count">° ¡¥<span><{$bulk.total_count}></span>∑Ô°À<{$bulk.display_count}>∑Ô…Ωº®</p>
+                        <p class="total-count">ÔºàÂÖ®<span><{$bulk.total_count}></span>‰ª∂Ôºâ<{$bulk.display_count}>‰ª∂Ë°®Á§∫</p>
                         <{if $bulk.pager.has_item}>
                         <ul class="pager">
                              <{if !$bulk.pager.is_first_display}>
-                                <li><a href="<{$bulk.pager.first_url}>"><span class="prev">∞Ï»÷¡∞§ÿ</span></a></li>
+                                <li><a href="<{$bulk.pager.first_url}>"><span class="prev">‰∏ÄÁï™Ââç„Å∏</span></a></li>
                             <{/if}>
     
                             <{section name=i loop=$bulk.pager.list}>
@@ -121,14 +121,14 @@
                             <{/section}>
     
                             <{if !$bulk.pager.is_last_display}>
-                                <li><a href="<{$bulk.pager.last_url}>"><span class="next">∫«∏Â§ÿ</span></a></li>
+                                <li><a href="<{$bulk.pager.last_url}>"><span class="next">ÊúÄÂæå„Å∏</span></a></li>
                             <{/if}>
                         </ul>
                         <{/if}>
                     </div>
     
                     <{else}>
-                        <p class="item-none-text">æ¶… §¨∏´§ƒ§´§Í§ﬁ§ª§Û§«§∑§ø°£</p>
+                        <p class="item-none-text">ÂïÜÂìÅ„ÅåË¶ã„Å§„Åã„Çä„Åæ„Åõ„Çì„Åß„Åó„Åü„ÄÇ</p>
                     <{/if}>
                     
                 </section>

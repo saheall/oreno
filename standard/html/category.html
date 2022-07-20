@@ -19,13 +19,13 @@
 </head>
 
 <body>
-	<!--   �ȥåפ����ܥ��� -->
+	<!--   トップに戻るボタン -->
 	<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 	<{$makeshop.body_top}>
 	<{$module.header}>
 	<div class="breadcrumb-area">
 		<div class="breadcrumb">
-			<span class="breadcrumb-item"><a href="<{$url.top}>">�ۡ���</a></span>
+			<span class="breadcrumb-item"><a href="<{$url.top}>">ホーム</a></span>
 			<{section name=i loop=$category.breadcrumb_list.list}>
 				<span class="breadcrumb-item <{if $category.breadcrumb_list.list[i].is_current}>current<{/if}>">
 					<a href="<{$category.breadcrumb_list.list[i].url}>"><{$category.breadcrumb_list.list[i].name}></a>
@@ -38,35 +38,35 @@
 			<{$module.side}>
 			<main class="main">
 				<section class="main-section">
-					<!--���ƥ��꡼̾-->
+					<!--カテゴリー名-->
 					<{if $category.code == 'french'}>
-						<div class="category-title-name">���Υե���</div>
+						<div class="category-title-name">俺のフレンチ</div>
 					<{elseif $category.code == 'italian'}>
-						<div class="category-title-name">���Υ����ꥢ��</div>
+						<div class="category-title-name">俺のイタリアン</div>
 					<{elseif $category.code == 'kappou'}>
-						<div class="category-title-name">���γ�ˣ</div>
+						<div class="category-title-name">俺の割烹</div>
 					<{elseif $category.code == 'gift'}>
-						<div class="category-title-name">£��ʪ</div>
+						<div class="category-title-name">贈り物</div>
 					<{elseif $category.code == 'ct54'}>
-						<div class="category-title-name">��ǰ��</div>
+						<div class="category-title-name">記念日</div>
 					<{elseif $category.code == 'ct47'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʤ�������</div>
+						<div class="category-title-name">【終了】フェア（おせち）</div>
 					<{elseif $category.code == 'ct55'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʥХ�󥿥����</div>
+						<div class="category-title-name">【終了】フェア（バレンタイン）</div>
 					<{elseif $category.code == 'ct55'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʥۥ磻�ȥǡ���</div>
+						<div class="category-title-name">【終了】フェア（ホワイトデー）</div>
 					<{elseif $category.code == 'mother'}>
-						<div class="category-title-name">�ڽ�λ��������ý�</div>
+						<div class="category-title-name">【終了】母の日特集</div>
 					<{elseif $category.code == 'ct34'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʷ�Ϸ������</div>
+						<div class="category-title-name">【終了】フェア（敬老の日）</div>
 					<{elseif $category.code == 'ct49'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʥ��ꥹ�ޥ���</div>
+						<div class="category-title-name">【終了】フェア（クリスマス）</div>
 					<{elseif $category.code == 'ct50'}>
-						<div class="category-title-name">�ڽ�λ�ۥե����ʤ������</div>
+						<div class="category-title-name">【終了】フェア（お歳暮）</div>
 					<{elseif $category.code == 'ct58'}>
-						<div class="category-title-name">ʣ���� �ۡ���ѡ��ƥ��� ��2��3�ͤˤ��������</div>
+						<div class="category-title-name">複数人 ホームパーティー 【2～3人におすすめ】</div>
 					<{elseif $category.code == 'ct59'}>
-						<div class="category-title-name">ʣ���� �ۡ���ѡ��ƥ��� ��4��5�ͤˤ��������</div>
+						<div class="category-title-name">複数人 ホームパーティー 【4～5人におすすめ】</div>
 					<{else}>
 						<div class="category-title-name"><{$category.name}></div>
 					<{/if}>
@@ -74,124 +74,124 @@
 					<div class="category-top-visual">
 						<{if $category.code == 'ct57'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">�����ʤΤ�����</div>
-							�����ʤΤ�����Ǥ��� ���Σţáʸ�������饤�󥷥�åסˤǤϡ���ǯ���̤��ƿ��������ʤ���Ƥ��Ƥ����ޤ��� �����ʾ���ϡ�������Υڡ�������ӡ�����Ͽ���������Ƥ���ޤ����ɥ쥹�˥����쥯�ȥ᡼��Ȥ��� ���Ϥ����ޤ���
+							<div class="category-top-visual-txt">新商品のご案内</div>
+							新商品のご案内です。 俺のＥＣ（公式オンラインショップ）では、１年を通して新しい商品をご提案していきます。 新商品情報は、こちらのページおよび、ご登録いただいておりますアドレスにダイレクトメールとして お届けします。
 						<{elseif $category.code == 'set'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">��£���ˤ�����ˡ������ʥ��åȤΤ��Ҳ�</div>
-							��͵��Υ��å��������ϥ�С����䥹�ơ������ѥ����˥��饿��ʤɤ����ѥ�����˹�碌�ƥ��åȤˤ��ޤ������ɤ�⥷���դ�������Ĵ����ˡ�ǹ�鿩���Ȥä������ʤ������ο����Ǥ����ޤ����Υե����䲶�Υ����ꥢ���Ź�ޤ˹Ԥä����ȤΤʤ����Ϥ�����󡢥ץ쥼��ȸ���ʤɤǤ��Ϥ���������������£���ѤȤ��Ƥ����Ф�ޤ������åȾ��ʤ�ñ�ʤ�ꤪ���ʲ��ʤǤ��Ѱդ��Ƥ���ޤ����ޤ�����Ȣ�����Ӥ��Ѱդ��Ƥ���ޤ���
+							<div class="category-top-visual-txt">ご贈答にご自宅に、お得なセットのご紹介</div>
+							大人気のロッシーニ風ハンバーグやステーキ、パスタにグラタンなどご利用シーンに合わせてセットにしました。どれもシェフこだわりの調理方法で高級食材を使った贅沢なお料理の数々です。まだ俺のフレンチや俺のイタリアンの店舗に行ったことのない方はもちろん、プレゼント御礼などでお届けしたいあの方へ贈答用としても選ばれます。セット商品は単品よりお得な価格でご用意しております。また化粧箱も別途ご用意しております。
 						<{elseif $category.code == 'matomegai'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">�����ʡ��ޤȤ��㤤�Τ�����Ǥ�</div>
-							���Ȥ��ʥ��åȾ��ʤǤ������ĥ��åȡ������ĥ��åȤʤ��͡��ˤ��Ѱդ��ޤ����� ���ϡ����åȤǹ������������������ͤ������Ϥ��ξ��ʤ��ԡ��ȹ���������������ʤ����Ԥ˱����뤿��� �����ʤޤȤ��㤤�Ǥ���
+							<div class="category-top-visual-txt">お得な　まとめ買いのご案内です</div>
+							おとくなセット商品です。５個セット、１０個セットなど様々にご用意しました。 初めは、セットで購入いただいたお客様が、次はこの商品をリピート購入したい！そんなご期待に応えるために お得なまとめ買いです。
 						<{elseif $category.code == 'ct48'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">��͵����å����ˡ�¾���ơ������ñ�ˤ������</div>
-							���Υե����ȸ����С������ץ����餫�鸽�ߤ���͵��Ρ֥��å����ˡפǤ�������٤ι⤤���ߤΤ��뤪����Ĵ���򡢻������㲹Ĵ�����Ƥ��Ϥ����뤳�Ȥǡ��������Ǵ�ñ�˥쥹�ȥ���̣��Ƹ��Ǥ���褦�ˤ��ޤ��������������ϡ��㲹�Ǥ��ä����Ǯ���뤳�Ȥˤ�ꡢ���ߤΤ��뤪���򤷤äȤ���餫���ž夲�ޤ����� �����ϡ�ɽ�̤�ڤ��Ƥ��ƥ���ߥۥ��������;Ǯ�Ǥ������������ǡ����Ϥ��줤�ʾƤ���������֤ߤΤ��ä���Ĥä����ܳʸ��ڤꥹ�ơ����δ����Ǥ�!������Υ��������Ѱդ��ޤ�����
+							<div class="category-top-visual-txt">大人気ロッシーニ、他ステーキを簡単にご自宅で</div>
+							俺のフレンチと言えば、オープン当初から現在も大人気の「ロッシーニ」です。難易度の高い厚みのあるお肉の調理を、事前に低温調理してお届けすることで、ご家庭で簡単にレストランの味を再現できるようにしました。牛ロースは、低温でじっくり加熱することにより、厚みのあるお肉をしっとり柔らかく仕上げました。 解凍後は、表面を軽く焼いてアルミホイルに包んで余熱であたためるだけで、外はきれいな焼き色、中は赤みのしっかり残った、本格厚切りステーキの完成です!４種類のソースをご用意しました。
 						<{elseif $category.code == 'cou'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���̤����ϡ������������ǡ������⡦�ơ��ʡ���</div>
-							���Ĥ�ϡ��ϥ�С������ѥ����䥰���Τۤ������̤ʵ�ǰ�����פ��ФΣ��ڡ����ˤ��������ڤ����Υǥ��ʡ��� ���Υ��꡼���Υ����դ��������������������Ϥ������Ǥ��礦���� �ڤ�����餤����̣����������������Ω�Ƥޤ���
+							<div class="category-top-visual-txt">特別な日は、コース料理で　お・も・て・な・し</div>
+							いつもは、ハンバーグ、パスタやグランのほかに特別な記念日、思い出の１ページにしたい大切な日のディナーは 俺のシリーズのシェフが厳選したコース料理はいかがでしょうか？ 楽しい語らいを、美味しいお料理が引き立てます。
 						<{elseif $category.code == 'hamburg'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">��Ź��̣�򤪼�ڤˤĤ���ޤ����å��������ϥ�С���</div>
-							��������饤�󥷥�å����䳫�Ϥ���͵��Υϥ�С���������ȥĤΰ��ֿ͵��ϡ֥��å��������ϥ�С����ס����Υե�����Ź�ޤǤϰ��ֿ͵��Ρ����å����������ơ����򡢤������Ǵ�ñ��Ĵ�����䤹���ϥ�С����˻ž夲�ޤ����������դ������Υڥꥰ���������ȵ�����������̣�襤�Τ��ä��ꤷ���ե��������Τ��Ƥ��ޤ����ޤ����å��������ϥ�С����ʳ���������ǯ��˹��ޤ��֥ǥߥ��饹�������ϥ�С����פϥ��åȾ��ʤ⤴�����ޤ���
+							<div class="category-top-visual-txt">お店の味をお手軽につくれますロッシーニ風ハンバーグ</div>
+							公式オンラインショップ販売開始から人気のハンバーグ。ダントツの一番人気は「ロッシーニ風ハンバーグ」。俺のフレンチの店舗では一番人気の、ロッシーニ風ステーキを、ご家庭で簡単に調理しやすいハンバーグに仕上げました。シェフこだわりのペリグーソースと牛肉。そして味わいのしっかりしたフォアグラをのせています。またロッシーニ風ハンバーグ以外も幅広い年齢に好まれる「デミグラスソースハンバーグ」はセット商品もございます。
 						<{elseif $category.code == 'stew'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���Υե�����ƻ�μѹ��������ο���</div>
-							�ե����β�ƻ�ȸ����С��ѹ��������ο��������Υե���Ź�ޤǤ⡢�����դ��줾��θ�������ѹ����������󶡤��Ƥޤ����ۤ����ۤɤ��ä���ѹ�����ֵ��ۤ����Υ����塽�ס����꡼��Ǽѹ�����ַܤΥեꥫ�å��ס�������Ĥ��ä��ե�󥹲������������֥֡ʥ������פ�¾�� ̣�Τ��ä��ꤷ�����Х�����Ȥä��ѹ��ߤ⤴�Ѱդ��ޤ��������Ҥ��������ܳ�Ū��̣�򤪾����夬�꤯��������
+							<div class="category-top-visual-txt">俺のフレンチ王道の煮込み料理の数々</div>
+							フレンチの王道と言えば、煮込み料理の数々。俺のフレンチ店舗でも、シェフそれぞれの個性ある煮込み料理をご提供してます。ほぐれるほどしっかり煮込んだ「牛ほほ肉のシチュ―」、クリームで煮込んだ「鶏のフリカッセ」、羊肉をつかったフランス家庭料理の定番「ナヴァラン」の他に 味のしっかりした牛バラ肉を使った煮込みもご用意しました。ぜひご家庭で本格的な味をお召し上がりください。
 						<{elseif $category.code == 'gratin'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">��鿩���Ĥ��ä��������饿��</div>
-							���Υե����ȸ����С����ޡ��볤Ϸ�����磻���ˡ��ݥ���������ʤɹ�鿩���Ĥ��ä�̣�襤�������饿��Ǥ��� ���ޡ��볤Ϸ��Ƭ����ڤ򤸤ä���ѹ��ߡ���̣�Ťߤ�Ф����ե�������Υ��������Ťߤζ����ݥ�����������衼���åѤξ����ȸ����Ƥ��ޤ������줾��λ�̣�νн��ȥ٥����륽���������ơ�������̣�򴶤��뤳�Ȥ��Ǥ���ڥ�ͤ�Ȥä�ǻ���ʥ��饿��˻ž夬��ޤ�����
+							<div class="category-top-visual-txt">高級食材をつかった贅沢グラタン</div>
+							俺のフレンチと言えば、オマール海老、ズワイガニ、ポルチーニ茸など高級食材をつかって味わい深いグラタンです。 オマール海老の頭と野菜をじっくり煮込み、旨味甘みを出したフランス料理のソース。甘みの強いポルチーニ茸。ヨーロッパの松茸と言われています。それぞれの旨味の出汁とベシャメルソースそして、小麦の味を感じることができるペンネを使って濃厚なグラタンに仕上がりました。
 						<{elseif $category.code == 'pasta'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���Υ����ꥢ��ȸ����С��ѥ���</div>
-							���Υ��꡼������Ź�ϡֲ��Υ����ꥢ���2011ǯ9��鸽�ߤޤǡ������ꥢ��Ȥ��С֥ѥ����פǤ��������դ����֤򤫤��ƺ�ä����줾��Υѥ����������Ϲ�鿩����Ϥ곪���ݥ�������������٥ꥳ�ڤ���ѡ���Ϸ�Υȥޥȥ��꡼�ॽ�����䤿�äפ�������꡼��򡢤�ä�������ѥ���������Ƥ��������ޤ���̣�襤����ǻ���ʥѥ������������򤻤󤹤�������ѥ�����觤Ǥ�����δ�ñĴ���Ǥ����������ˡ��ѡ��ƥ����Σ��ʤˡ����Ĥ���̣�������������ޤ���
+							<div class="category-top-visual-txt">俺のイタリアンと言えば！パスタ</div>
+							俺のシリーズ１号店は「俺のイタリアン」2011年9月から現在まで、イタリアンといば「パスタ」です。シェフが時間をかけて作ったそれぞれのパスタソースは高級食材の渡り蟹、ポルチーニ茸、イベリコ豚を使用。海老のトマトクリームソースやたっぷりの生クリームを、もっちりの生パスタで絡めていただきます。味わい深い濃厚なパスタソースは湯せんするだけ、パスタも茹でるだけの簡単調理です。お食事に、パーティーの１品に、いつも美味しくいただけます。
 						<{elseif $category.code == 'soup'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">�Ǻ�ˤ�����ä������פ��Ǥ��ޤ���</div>
-							�Ǻ�ˤ�����ꡢ�ե�������ˡ�ǤĤ��ä������פ��������ޤ����� ̣�襤�����������������ޤ�̣�ο�������������̣�򤷤ä���Ф����������Υߥͥ��ȥ����͡������Τ����ȥ��դȥޥå���롼��Υ����ס��񻺥�����ˤ�����ä��ץ�ߥ��ॳ���󥹡��ס����ޡ��륨�Ӥ��Ϥ곪����Ϸ�����֥�������ʣ���ιó����Ȥä������ʥӥ�����������ȥۥ��ƤΣץ����ץ������㥦�����������פ�������ǯ��γ��ͤ˹��ޤ�ޤ���
+							<div class="category-top-visual-txt">素材にこだわったスープができました</div>
+							素材にこだわり、フレンチの製法でつくったスープが完成しました。 味わいが深く、心あたたまる味の数々。野菜本来の味をしっかり出した具沢山のミネストローネ、相性のいいトリュフとマッシュルームのスープ、国産コーンにこだわったプレミアムコーンスープ、オマールエビと渡り蟹、海老、ロブスターと複数の甲殻類を使った贅沢なビスク、あさりとホタテのＷスープクラムチャウダー。スープは幅広い年代の皆様に好まれます。
 						<{elseif $category.code == 'qui'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">������Υ��å���</div>
-							ľ�£���������ʣ��極�����ˤΥ��å���򣳼��ऴ�Ѱդ��ޤ����������Τ�ä��ꤷ���֥����ˡ��ǥ��ʡ��ΰ��ʤ� ���٤��ꥵ�����ǡ���­��̣�襤�Ǥ����̤ꥰ�����ڤȥХ��륽���������٥ꥳ�١�����Ȥۤ�����𡢣���Υ������ȥݥƥ� �磻��ˤ�ȤäƤ�礤�ޤ���
+							<div class="category-top-visual-txt">３種類のキッシュ</div>
+							直径１２センチ（４号サイズ）のキッシュを３種類ご用意しました。休日のゆったりしたブランチに、ディナーの一品に 食べきりサイズで、満足の味わいです。彩りグリル野菜とバジルソース、イベリコベーコンとほうれん草、４種のチーズとポテト ワインにもとっても合います。
 						<{elseif $category.code == 'ct51'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">�ե����ξ���̣�ˤ��������⤤�����ॱ����</div>
-							�ߥ��������դ��쥹�ȥ���и����Ƥ���ֲ��Υե����ץ����դ����쥹�ȥ��Υǥ����ȤȤ����󶡤Ǥ��륯����ƥ����ɵᤷ�����ॱ������ ���ڤ��Ŷ��򤻤������٤�Ť͡��褦�䤯������é���夤������̣�襤�ϡ����ॱ�����ʤΤ˴ְ㤤�ʤ��쥹�ȥ�󥯥���ƥ������󡢤����ͤ����ȤǤ���̣��Τ���ƤߤƤ���������
+							<div class="category-top-visual-txt">フレンチの匠が味にこだわりに浮いた冷凍ケーキ</div>
+							ミシュラン星付きレストランを経験している「俺のフレンチ」シェフが、レストランのデザートとして提供できるクオリティを追求した冷凍ケーキ。 一切の妥協をせず試作を何度も重ね、ようやく完成に辿り着いたその味わいは、冷凍ケーキなのに間違いなくレストランクオリティ。是非、お客様ご自身でその味を確かめてみてください。
 						<{elseif $category.code == 'ct53'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">��£�����ץ쥼��ȡ����ˤ��ˤ����Ѥ��������ޤ�</div>
-							������Τ���ʸ�ˣ�������Ǥ��ޤ�<br>��Ȣ�Υ����������Ҥˤ�Ǥ����������
+							<div class="category-top-visual-txt">ご贈答、プレゼント、お祝いにご利用いただけます</div>
+							・１件のご注文に１つ選択できます<br>・箱のサイズは当社にお任せください
 						<{elseif $category.code == 'sub'}>
 						<{elseif $category.code == 'gift'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���̤ʻ������̤ʤ��������Ϥ�����</div>
-							���Υե��������Υ����ꥢ�󤽤�������Ǿ����夬�äƤ������롢���ΣţäǤϡ����ڤʤ������ء����ڤʻ�����Ȥ��� �פ��ФΥ�����䡢���դε������Υ��եȤȤ��Ƥ����Ѥ��������Ƥޤ������ҡ����Ĥ⤪����ʤ����ä� �����ǡ������ʤȤ��˾����夬�äƤ���������ֲ��Υ��꡼���פΥ����Ϥ������Ǥ��礦����
+							<div class="category-top-visual-txt">特別な事、特別なあの方へ届けたい</div>
+							俺のフレンチ、俺のイタリアンそして全国で召し上がってただける、俺のＥＣでは、大切なあの方へ、大切な時を刻むときと 思い出のシーンや、感謝の気持ちのギフトとしてご利用いただいてます。ぜひ、いつもお礼の品をちょっと 贅沢で、好きなときに召し上がっていただける「俺のシリーズ」のグルメはいかがでしょうか？
 						<{elseif $category.code == 'ct54'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���ڤ����ϡ���ǰ���ǥ��ʡ���</div>
-							�����������뺧��ǰ�������ڤ����Τ��ˤ��ˡ���������Фˡ��� �����ε�ǰ���򡢤�����Ǥ������Ǥ��礦�������Υե����������ꥢ��Υ����հ�Ͱ�ͤ��Ϻ�򥻥åȤˤ��ޤ�����������ϴ�ñ���򤻤�ǲ����������ʥ��ơ����ϾƤ��ܤ�Ĥ�������ˡ������˻��֤򤫤��ޤ������ڤʵ�ǰ���ϸ��礤�������̤碌������Ρ���ǰ���ǥ��ʡ������ڤʻפ��к��Τ����������Ǥ���й����Ǥ���
+							<div class="category-top-visual-txt">大切な日は、記念日ディナーを</div>
+							お誕生日、結婚記念日、大切な方のお祝いに、人生の門出に・・ 人生の記念日を、ご自宅でいかがでしょうか？俺のフレンチ、イタリアンのシェフ一人一人の力作をセットにしました。作り方は簡単、湯せんで温めるだけ、（ステーキは焼き目をつけるだけ）、準備に時間をかけません。大切な記念日は語り合い、心を通わせたいもの。記念日ディナーで大切な思い出作りのお手伝いができれば幸いです。
 						<{elseif $category.code == 'ct47'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">������������Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">おせちの販売は終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'ct55'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">2021ǯ�ΥХ�󥿥���ե����Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">2021年のバレンタインフェアは終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'ct56'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">2022ǯ�Υۥ磻�ȥǡ��ե����Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">2022年のホワイトデーフェアは終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'mother'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">���Ĥ⤢�꤬�Ȥ���������ý���</div>
-							2022ǯ������ý��Ͻ�λ���ޤ�������ǯ�ޤ������⿽���夲�ޤ���
+							<div class="category-top-visual-txt">いつもありがとう～母の日特集～</div>
+							2022年母の日特集は終了しました。来年またご案内申し上げます。
 						<{elseif $category.code == 'ct52'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">�Ϥ���ޤ��ơ����Υե��������Υ����ꥢ��ؤ褦����</div>
-							�Ϥ���Ƥ��ۤ����������ޤ������ߤʤ��ޤؤ���Ƥ����Ƥ����������� ���Υե��������Υ����ꥢ��Υ����դ������ο����Ǥ���Ź�ޤ˹Ԥ��줿�����Ԥ��줿���Ȥ��ʤ����ˤ⡢����ڤ��ܳ�Ū�ʤ������򤴼���Ǿ����夬�äƤ��������ޤ�����������ԡ��Ȥ��Ƥ������⤤�������ޤ��� �ޤ���£���ѤȤ��Ƥ��渵��������ʤ�¿��������ʪ�����Ф줿���åȤο����Ǥ������ĤǤⲿ�٤Ǥ⤴�������������ޤ���
+							<div class="category-top-visual-txt">はじめまして！俺のフレンチ　俺のイタリアンへようこそ</div>
+							はじめてお越しいただきました、みなさまへご提案させていたいだいる 俺のフレンチ、俺のイタリアンのシェフの料理の数々です。店舗に行かれた方、行かれたことがない方にも、お手軽に本格的なお料理をご自宅で召し上がっていただけます。もちろんリピートしてご購入もいただけます。 また、贈答用としてお中元、お歳暮など多くの送り物に選ばれたセットの数々です。いつでも何度でもご購入いただけます。
 						<{elseif $category.code == 'ct34'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">2021ǯ�η�Ϸ�����ե����Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">2021年の敬老の日フェアは終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'ct49'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">2021ǯ�Υ��ꥹ�ޥ��ե����Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">2021年のクリスマスフェアは終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'ct50'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.gif" class="image-<{$category.code}>">
-							<div class="category-top-visual-txt">2021ǯ�Τ�����ե����Ͻ�λ�������ޤ�����<br>���������򤪳ڤ��ߤˡ�</div>
+							<div class="category-top-visual-txt">2021年のお歳暮フェアは終了いたしました。<br>次回の販売をお楽しみに！</div>
 							&nbsp;
 						<{elseif $category.code == 'ct53_1'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>���Ĥ��ĥ�äƤ��뼫ʬ�ˡ���˫���Ȥ��Ƥ��ҡ�<br>���Υե��������Υ����ꥢ��Υ����դ�̣���ñ�˺Ƹ��Ǥ��ޤ���<br>���ʤ��ο��⤪ʢ������������������ʲ���EC����Τ���ƤǤ���</div>
+							<div>いつも頑張っている自分に、ご褒美としてぜひ。<br>俺のフレンチ　俺のイタリアンのシェフの味を簡単に再現できます。<br>あなたの心もお腹も満たしたい、そんな俺のECからのご提案です。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct54_1'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>��ͤ����ڤʵ�ǰ���ˡ�����äȥ�å��ʤ������Ϥ������Ǥ�����<br>���Υե��� ���Υ����ꥢ��Υ����դ�̣������ñ�˺Ƹ��Ǥ��ޤ���<br>�������ϴ�ñ�ˤ�������������ͤ����ڤ����λפ��ФΤ����ˤ��ҡ�</div>
+							<div>二人の大切な記念日に、ちょっとリッチなお食事はいかがですか？<br>俺のフレンチ 俺のイタリアンのシェフの味が、簡単に再現できます。<br>お食事は簡単においしく、お二人の大切な日の思い出のお供にぜひ。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct55_1'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>�ڤ����ۡ���ѡ��ƥ����Τ������ˡ�<br>��ͧã�ν��ޤꡢ����²�Ǥ��ˤ����ʤɡ����ȤǤ������򤷤ʤ��餿�Τ����ۡ���ѡ��ƥ����ˡ����Υե��������Υ����ꥢ��Υ����դ�̣�򤴲����Ǵ�ñ�˺Ƹ��Ǥ��ޤ����ʤ��ʤ����Τϼ�֤Τ����뤳�ȡ�<br>����ʤȤ������Σţä��������ڤ�����Ƥʤ������˥ԥå���Ǥ���</div>
+							<div>楽しいホームパーティーのお料理に！<br>お友達の集まり、ご家族でお祝い事など、お家でお食事をしながらたのしいホームパーティーに、俺のフレンチ　俺のイタリアンのシェフの味をご家庭で簡単に再現できます。なかなか作るのは手間のかかること。<br>そんなとき、俺のＥＣの冷凍総菜がおもてなし料理にピッタリです。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct58'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>�ڤ����ۡ���ѡ��ƥ����Τ������ˡ�<br>��ͧã�ν��ޤꡢ����²�Ǥ��ˤ����ʤɡ����ȤǤ������򤷤ʤ��餿�Τ����ۡ���ѡ��ƥ����ˡ����Υե��������Υ����ꥢ��Υ����դ�̣�򤴲����Ǵ�ñ�˺Ƹ��Ǥ��ޤ����ʤ��ʤ����Τϼ�֤Τ����뤳�ȡ�<br>����ʤȤ������Σţä��������ڤ�����Ƥʤ������˥ԥå���Ǥ���</div>
+							<div>楽しいホームパーティーのお料理に！<br>お友達の集まり、ご家族でお祝い事など、お家でお食事をしながらたのしいホームパーティーに、俺のフレンチ　俺のイタリアンのシェフの味をご家庭で簡単に再現できます。なかなか作るのは手間のかかること。<br>そんなとき、俺のＥＣの冷凍総菜がおもてなし料理にピッタリです。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct59'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>�ڤ����ۡ���ѡ��ƥ����Τ������ˡ�<br>��ͧã�ν��ޤꡢ����²�Ǥ��ˤ����ʤɡ����ȤǤ������򤷤ʤ��餿�Τ����ۡ���ѡ��ƥ����ˡ����Υե��������Υ����ꥢ��Υ����դ�̣�򤴲����Ǵ�ñ�˺Ƹ��Ǥ��ޤ����ʤ��ʤ����Τϼ�֤Τ����뤳�ȡ�<br>����ʤȤ������Σţä��������ڤ�����Ƥʤ������˥ԥå���Ǥ���</div>
+							<div>楽しいホームパーティーのお料理に！<br>お友達の集まり、ご家族でお祝い事など、お家でお食事をしながらたのしいホームパーティーに、俺のフレンチ　俺のイタリアンのシェフの味をご家庭で簡単に再現できます。なかなか作るのは手間のかかること。<br>そんなとき、俺のＥＣの冷凍総菜がおもてなし料理にピッタリです。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct56_1'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
-							<div>��֤Ƚ��ޤäơ���̣���������Ȱ��˳ڤ������֤�ᤴ���ޤ��󤫡�<br>���Ҳ��Υե��������Υ����ꥢ��Υ����դ�̣�򤪶��ˤ����Ƥ���������<br>�������ϴ�ñ����̣��������Ũ�ʤ����֤򤪲ᤴ����������</div>
+							<div>仲間と集まって、美味しい食事と一緒に楽しい時間を過ごしませんか？<br>ぜひ俺のフレンチ　俺のイタリアンのシェフの味をお供にさせてください。<br>お食事は簡単に美味しく、素敵なお時間をお過ごし下さい。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct65'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.jpg" class="image-<{$category.code}>">
-							<div>���Υե��������Υ����ꥢ�󡡥����չͰƤξ��ʤο������椫�� ���Σţ������󥭥󥰿͵��Υ��å����ơ����Υ��åȡ��ǥߥ��饹�������ϥ�С������ѥ��եȥܥå������ꣵ�ĥ��åȤʤɤ��Ѱդ��ޤ����� ���ʤϡ����ͤ����򤤤������ޤ����ʥ����볰Ȣ��Ž�륿���ס�ʸ�������Բġˤ��Һ�ǯ�⤴���Ѥ���������</div>
+							<div>俺のフレンチ　俺のイタリアン　シェフ考案の商品の数々の中から 俺のＥＣ販売ランキング人気のロックステーキのセット、デミグラスソースハンバーグ専用ギフトボックス入り５個セットなどご用意しました。 商品は、熨斗をご選択いただけます。（シール外箱に貼るタイプ。文字入れ不可）ぜひ今年もご利用ください。</div>
 							&nbsp;
 						<{elseif $category.code == 'ct57_1'}>
 							<img src="https://gigaplus.makeshop.jp/orenoec1/images/category/icon-<{$category.code}>.png" class="image-<{$category.code}>">
@@ -200,11 +200,11 @@
 						<{/if}>
 					</div>
 					<div class="category-title">
-						<p class="total-count list-head-sort">��<{$category.total_count}>��</p>
+						<p class="total-count list-head-sort">全<{$category.total_count}>件</p>
 						<dl class="list-head-sort">
-							<dt class="category-link-txt" style="line-height: 32px;">�¤��ؤ���</dt>
-							<dd class="category-link-box category-link-box-mgn"><a href="<{$category.sort_new_url}>">����</a></dd>
-							<dd class="category-link-box category-link-box-mgn"><a href="<{$category.sort_low_price_url}>">����</a></dd>
+							<dt class="category-link-txt" style="line-height: 32px;">並び替え：</dt>
+							<dd class="category-link-box category-link-box-mgn"><a href="<{$category.sort_new_url}>">新着</a></dd>
+							<dd class="category-link-box category-link-box-mgn"><a href="<{$category.sort_low_price_url}>">価格</a></dd>
 						</dl>
 					</div>
 					<div class="pager-wrap cot-sp pgt">
@@ -228,17 +228,17 @@
 							</ul>
 						<{/if}>
 					</div>
-					<!--�ҥ��ƥ��꡼̾-->
+					<!--子カテゴリー名-->
 					<{if $category.child_category.has_item}>
 						<ul class="category-child-item">
 							<{section name=i loop=$category.child_category.list}>
 								<li>
-									<a href="<{$category.child_category.list[i].url}>" class="child_category_link"><{$category.child_category.list[i].name}><!--<span class="child-category-count">��<{$category.child_category.list[i].item_count}>��</span>--></a>
+									<a href="<{$category.child_category.list[i].url}>" class="child_category_link"><{$category.child_category.list[i].name}><!--<span class="child-category-count">（<{$category.child_category.list[i].item_count}>）</span>--></a>
 								</li>
 							<{/section}>
 						</ul>
 					<{/if}>
-					<!--���ƥ��꡼�����ƥ�-->
+					<!--カテゴリーアイテム-->
 					<{if $category.item.has_item}>
 						<div class="section_main">
 							<ul class="item-list">
@@ -259,13 +259,13 @@
 											<p class="item-sdisplay"><{$category.item.list[i].special_display}></p>
 										<{/if}>
 										<div class="price-wrap">
-											<div class="price">��<{$category.item.list[i].price|number_format}><span>���ǹ���</span></div>
+											<div class="price">￥<{$category.item.list[i].price|number_format}><span>（税込）</span></div>
 										</div>
 									</li>
 								<{/section}>
 							</ul>
 						</div>
-						<!--�ڡ����㡼-->
+						<!--ページャー-->
 						<div class="pager-wrap cot-pc">
 							<{if $category.pager.has_item}>
 								<ul class="pager">
@@ -303,7 +303,7 @@
 							<{/if}>
 						</div>
 					<{else}>
-						<p class="empty">���Υ��ƥ��꡼�ˤϾ��ʤ�����ޤ���</p>
+						<p class="empty">このカテゴリーには商品がありません</p>
 					<{/if}>
 				</section>
 				<!-- instagram -->

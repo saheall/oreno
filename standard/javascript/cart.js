@@ -38,7 +38,7 @@ $(function() {
   });
 });
 
-// ¿ôÎÌÊÑ¹¹¥Ü¥¿¥ó
+// æ•°é‡å¤‰æ›´ãƒœã‚¿ãƒ³
 $(function() {
     $('.spinner_down').on('click', function() {
         var index = $('.spinner_down').index(this);
@@ -74,7 +74,7 @@ function spinner(counter, index){
     $('.quantity').eq(index).val(quantity);
 }
 
-// ¥Ü¥¿¥ó¤ÎONOFF
+// ãƒœã‚¿ãƒ³ã®ONOFF
 function attention(num, onchange) {
   let cartattentionDisplay = $('.cartattention[data-item_num="' + num + '"]');
   let changeButton = $('.quantity-change-button[data-item_num="' + num + '"]');

@@ -19,14 +19,14 @@
 </head>
 
 <body>
-	<!--   �ȥåפ����ܥ��� -->
+	<!--   トップに戻るボタン -->
 	<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 	<{$makeshop.body_top}>
 	<{$module.header}>
 	<div class="breadcrumb-area">
 		<div class="breadcrumb">
-			<span class="breadcrumb-item"><a href="<{$url.top}>">�ۡ���</a></span>
-			<span class="breadcrumb-item">���Τ餻����</span>
+			<span class="breadcrumb-item"><a href="<{$url.top}>">ホーム</a></span>
+			<span class="breadcrumb-item">お知らせ一覧</span>
 		</div>
 	</div>
 	<div class="contents">
@@ -35,7 +35,7 @@
 			<main class="main">
 				<section class="main-section">
 					<div class="category-title">
-						<div class="news-category-title">�������</div>
+						<div class="news-category-title">新着情報</div>
 					</div>
 					<div class="news-hr"></div>
 					<div class="pager-wrap cot-sp pgt">
@@ -59,7 +59,7 @@
 							</ul>
 						<{/if}>
 					</div>
-					<!--���Τ餻����-->
+					<!--お知らせ一覧-->
 					<{if $news.has_item}>
 						<ul class="news-list">
 							<{section name=i loop=$news.list}>
@@ -82,7 +82,7 @@
 								</li>
 							<{/section}>
 						</ul>
-						<!--�ڡ����㡼-->
+						<!--ページャー-->
 						<div class="pager-wrap cot-pc">
 							<{if $news.pager.has_item}>
 								<ul class="pager news-list-pager">
@@ -120,7 +120,7 @@
 							<{/if}>
 						</div>
 					<{else}>
-						<p class="empty">���Τ餻�Ϥ���ޤ���</p>
+						<p class="empty">お知らせはありません</p>
 					<{/if}>
 				</section>
 			</main>

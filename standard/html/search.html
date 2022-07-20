@@ -19,15 +19,15 @@
 </head>
 
 <body>
-<!-- ¥È¥Ã¥×¤ËÌá¤ë¥Ü¥¿¥ó -->
+<!-- ãƒˆãƒƒãƒ—ã«æˆ»ã‚‹ãƒœã‚¿ãƒ³ -->
 <a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 <{$makeshop.body_top}>
 <{$module.header}>
 
 <div class="breadcrumb-area">
 	<div class="breadcrumb">
-		<span class="breadcrumb-item"><a href="<{$url.top}>">¥Û¡¼¥à</a></span>
-		<span class="breadcrumb-item current">¸¡º÷·ë²Ì</span>
+		<span class="breadcrumb-item"><a href="<{$url.top}>">ãƒ›ãƒ¼ãƒ </a></span>
+		<span class="breadcrumb-item current">æ¤œç´¢çµæžœ</span>
 	</div>
 </div>
 <div class="contents">
@@ -35,9 +35,9 @@
 		<{$module.side}>
 		<main class="main">
 			<section class="main-section">
-				<!--¸¡º÷·ë²Ì-->
+				<!--æ¤œç´¢çµæžœ-->
 				<div class="category-title">
-					<div class="cart-section-title">¸¡º÷·ë²Ì
+					<div class="cart-section-title">æ¤œç´¢çµæžœ
 						<span>
 							<{if $search.keyword}>
 								<{$search.keyword}>
@@ -46,7 +46,7 @@
 								<{$search.category.name}>
 							<{/if}>
 							<{if $search.price_low || $search.price_high}>
-								<{if $search.price_low}><{$search.price_low}>±ß<{/if}>¡Á<{if $search.price_high}><{$search.price_high}>±ß<{/if}>
+								<{if $search.price_low}><{$search.price_low}>å††<{/if}>ï½ž<{if $search.price_high}><{$search.price_high}>å††<{/if}>
 							<{/if}>
 							<{if $search.original_code}>
 								<{$search.original_code}>
@@ -55,9 +55,9 @@
 					</div>
 					<div class="cart-hr"></div>
 					<dl class="list-head-sort">
-						<dt>ÊÂ¤ÓÂØ¤¨¡§</dt>
-						<dd><a href="<{$search.sort_new_url}>">¿·Ãå½ç</a></dd>
-						<dd><a href="<{$category.sort_low_price_url}>">²Á³Ê</a></dd>
+						<dt>ä¸¦ã³æ›¿ãˆï¼š</dt>
+						<dd><a href="<{$search.sort_new_url}>">æ–°ç€é †</a></dd>
+						<dd><a href="<{$category.sort_low_price_url}>">ä¾¡æ ¼</a></dd>
 					</dl>
 					<br style="clear: both;">
 				</div>
@@ -82,7 +82,7 @@
 						</ul>
 					<{/if}>
 				</div>
-				<!--¸¡º÷¥¢¥¤¥Æ¥à-->
+				<!--æ¤œç´¢ã‚¢ã‚¤ãƒ†ãƒ -->
 				<{if $search.item.has_item}>
 					<div class="section_main">
 						<ul class="item-list">
@@ -103,17 +103,17 @@
 										<p class="item-sdisplay"><{$search.item.list[i].special_display}></p>
 									<{/if}>
 									<{if $search.item.list[i].is_sale}>
-										<p class="price original-price">¡ï<{$search.item.list[i].original_price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
-										<p class="price item-sale-price">¡ï<{$search.item.list[i].price|number_format}><span class="tax">¡ÊÀÇ¹þ¡Ë</span>
+										<p class="price original-price">ï¿¥<{$search.item.list[i].original_price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></p>
+										<p class="price item-sale-price">ï¿¥<{$search.item.list[i].price|number_format}><span class="tax">ï¼ˆç¨Žè¾¼ï¼‰</span>
 										<span class="sale-discount-rate">[<{$search.item.list[i].sale_rate}>%OFF</span>]</p>
 									<{else}>
-										<p class="price">¡ï<{$search.item.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
+										<p class="price">ï¿¥<{$search.item.list[i].price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></p>
 									<{/if}>
 								</li>
 							<{/section}>
 						</ul>
 					</div>
-					<!--¥Ú¡¼¥¸¥ã¡¼-->
+					<!--ãƒšãƒ¼ã‚¸ãƒ£ãƒ¼-->
 					<div class="pager-wrap cot-pc">
 						<{if $search.pager.has_item}>
 							<ul class="pager">
@@ -151,7 +151,7 @@
 						<{/if}>
 					</div>
 				<{else}>
-					<p class="empty">¤´»ØÄê¤Î¾ò·ï¤Ë°ìÃ×¤¹¤ë¾¦ÉÊ¤¬¸«¤Ä¤«¤ê¤Þ¤»¤ó¤Ç¤·¤¿</p>
+					<p class="empty">ã”æŒ‡å®šã®æ¡ä»¶ã«ä¸€è‡´ã™ã‚‹å•†å“ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ</p>
 				<{/if}>
 			</section>
 		</main>

@@ -18,7 +18,7 @@
 <{$makeshop.head}>
 </head>
 <body>
-  <!--   �ȥåפ����ܥ��� -->
+  <!--   トップに戻るボタン -->
   <a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 <{$makeshop.body_top}>
 <{$module.header}>
@@ -26,15 +26,15 @@
   <div class="container">
   	<{$module.side}>
   	<section class="main">
-  		<div class="cart-section-title">�㤤ʪ����</div>
+  		<div class="cart-section-title">買い物かご</div>
   		<div class="cart-hr"></div>
   		<{if $cart.has_item}>
   			<!--<{if $cart.is_free_shipping_enabled}>
   				<div class="free-shipping-wrap">
   					<{if $cart.free_shipping_price == 0}>
-  						<p class="free-shipping-text">����Τ��㤤ʪ��<em>����̵��</em>�Ȥʤ�ޤ�</p>
+  						<p class="free-shipping-text">今回のお買い物は<em>送料無料</em>となります</p>
   					<{else}>
-  						<p class="free-shipping-text">����<em>��<{$cart.free_shipping_price|number_format}></em>������̵���ˤʤ�ޤ�</p>
+  						<p class="free-shipping-text">あと<em>￥<{$cart.free_shipping_price|number_format}></em>で送料無料になります</p>
   						<p class="free-shipping-text"><{$cart.free_shipping_message}></p>
   					<{/if}>
   				</div>
@@ -43,7 +43,7 @@
   				<div class="cart-section-area">
 
             <div class="cart-item-content">
-    					<!-- ������ƥ�� -->
+    					<!-- 左コンテンツ -->
               <div class="cart-item-left-content">
       					<div class="cart-section-img">
       						<a href="<{$cart.list[i].url}>"><img src="<{$cart.list[i].image_S}>" alt="<{$cart.list[i].name}>"></a>
@@ -55,36 +55,36 @@
 
                   <div class="cart-item-left-price-content">
           					<div class="cart-section-price">
-          						<{$cart.list[i].price|number_format}><span class="cart-price-sub">�ߡ��ǹ���</span>
+          						<{$cart.list[i].price|number_format}><span class="cart-price-sub">円（税込）</span>
           					</div>
           					<div class="cart-section-point">
-          						<{if $shop.is_point_enabled}>�ݥ���ȡ�<span class="cart-point-value"><{$cart.list[i].total_point|number_format}></span><{/if}>
+          						<{if $shop.is_point_enabled}>ポイント：<span class="cart-point-value"><{$cart.list[i].total_point|number_format}></span><{/if}>
           					</div>
                   </div>
                 </div>
               </div>
-    					<!-- /������ƥ�� -->
+    					<!-- /左コンテンツ -->
 
-    					<!-- ������ƥ�� -->
+    					<!-- 右コンテンツ -->
               <div class="cart-item-right-content">
       					<div class="cart-section-num">
-      						<div class="cart-quantity-value">���̡�</div>
+      						<div class="cart-quantity-value">数量：</div>
       						<div class="spinner-container">
       							<span class="spinner-sub" onclick="attention(<{$cart.list[i].num}>, true)" data-item_num="<{$cart.list[i].num}>"></span>
       							<input class="spinner" type="number" min="0" max="999" value="<{$cart.list[i].quantity}>" data-id="<{$cart.list[i].quantity_id}>" name="item-quantity">
       							<span class="spinner-add" onclick="attention(<{$cart.list[i].num}>, true)" data-item_num="<{$cart.list[i].num}>"></span>
-      							<a class="quantity-change-button is_disabled" href="<{$cart.list[i].quantity_url}>" onclick="attention(<{$cart.list[i].num}>, false)" data-item_num="<{$cart.list[i].num}>">�ѹ�</a>
+      							<a class="quantity-change-button is_disabled" href="<{$cart.list[i].quantity_url}>" onclick="attention(<{$cart.list[i].num}>, false)" data-item_num="<{$cart.list[i].num}>">変更</a>
       						</div>
       					</div>
       					<div class="cart-section-del">
-      						<span class="item-cart-delete"><a href="<{$cart.list[i].remove_url}>">���</a></span>
+      						<span class="item-cart-delete"><a href="<{$cart.list[i].remove_url}>">削除</a></span>
       					</div>
               </div>
-              <!-- /������ƥ�� -->
+              <!-- /右コンテンツ -->
             </div>
 
-  			<!-- ����ʸ -->
-            <div class="cartattention cartattention-txt" data-item_num="<{$cart.list[i].num}>">���̤γ���ˤϡ��ѹ��ץܥ���򲡤��Ƥ���������</div>
+  			<!-- 注意文 -->
+            <div class="cartattention cartattention-txt" data-item_num="<{$cart.list[i].num}>">数量の確定には「変更」ボタンを押してください。</div>
             <div class="cart-hr-gray"></div>
         </div>
   			<{/section}>
@@ -92,37 +92,37 @@
   			<table class="cart-total-area">
 					<{if $cart.bulk.has_item}>
 						<tr class="cart-total">
-  						<!--���ʹ�׶��-->
+  						<!--商品合計金額-->
  							<td class="cart-total-price-wrap bulk-name">
 								<{section name=i loop=$cart.bulk.list}>
 									<{section name=j loop=$cart.bulk.list[i].item.list}>
 										<p class="item-cart-name"><{$cart.bulk.list[i].item.list[j].name}></p>
 									<{/section}>
-									<p class="cart-bulk"><{$cart.bulk.list[i].name}> ����ۡ�<{$cart.bulk.list[i].discount_price}>��</p>
+									<p class="cart-bulk"><{$cart.bulk.list[i].name}> 割引額：<{$cart.bulk.list[i].discount_price}>円</p>
 								<{/section}>
 							</td>
 						</tr>
 					<{/if}>
 					<tr class="cart-total">
 						<td colspan="2" class="cart-total-price-wrap">
-  						<p class="cart-total-price">��׶�ۡ�<span class="cart-total-price-txt"><{$cart.total_price|number_format}></span>�ߡ��ǹ���</p>
+  						<p class="cart-total-price">合計金額　<span class="cart-total-price-txt"><{$cart.total_price|number_format}></span>円（税込）</p>
   					</td>
   				</tr>
   			</table>
   			<ul class="cart-button-wrap">
   				<li class="cart-back-button">
-  					<a href="<{$url.top}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icom_cart_b.svg" class="cart-back-icon">�㤤ʪ��³����</a>
+  					<a href="<{$url.top}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icom_cart_b.svg" class="cart-back-icon">買い物を続ける</a>
   				</li>
           <li class="cart-button">
-  					<a href="<{$cart.order_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_shop.svg" class="cart-order-icon">��������³���ؿʤ�</a>
+  					<a href="<{$cart.order_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_shop.svg" class="cart-order-icon">ご購入手続きへ進む</a>
   				</li>
   			</ul>
-				<div class="cart-soryo-price">��10,800�ߡ��ǹ��˰ʾ头����������̵��</div>
+				<div class="cart-soryo-price">※10,800円（税込）以上ご購入で送料無料</div>
   		<{else}>
-  			<p class="incart-total-item">�����Ȥ˾��ʤϤ���ޤ���</p>
+  			<p class="incart-total-item">カートに商品はありません</p>
   		<{/if}>
   		<div class="cart-checked-area">
-  			<div class="cart-checked-title">�Ƕ�����å���������</div>
+  			<div class="cart-checked-title">最近チェックした商品</div>
   			<div class="cart-hr"></div>
   			<{$module.checked}>
   		</div>

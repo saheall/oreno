@@ -10,6 +10,6 @@ $(".news-list .news-list-unit-s .news-list-title").each(function(i, e) {
 });
 
 if ($('.current').eq(0).text() != '4') {
-	$('.btn-prev').closest('li').after('<div class="pgtt">¡Ä</div>');
-	$('.btn-next').closest('li').before('<div class="pgtt">¡Ä</div>');
+	$('.btn-prev').closest('li').after('<div class="pgtt">ï½¡ï¾„</div>');
+	$('.btn-next').closest('li').before('<div class="pgtt">ï½¡ï¾„</div>');
 }

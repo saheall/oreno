@@ -1,11 +1,11 @@
 $(function() {
-    // ¥Ø¥Ã¥À¡¼¤Î¥µ¥¤¥ºÄ´À°
+    // ãƒ˜ãƒƒãƒ€ãƒ¼ã®ã‚µã‚¤ã‚ºèª¿æ•´
     headerAdjust();
     $(window).on('scroll', function() {
         headerAdjust();
     });
 
-    // ¥«¥ì¥ó¥À¡¼ÆÃÄêÆü¤ÎÀßÄê
+    // ã‚«ãƒ¬ãƒ³ãƒ€ãƒ¼ç‰¹å®šæ—¥ã®è¨­å®š
     $('.day-list').each(function() {
         var month = $(this).attr('data-month');
         var day = $(this).attr('data-day');
@@ -19,21 +19,21 @@ $(function() {
         });
     });
 
-    // ¸¡º÷¥Õ¥©¡¼¥à
+    // æ¤œç´¢ãƒ•ã‚©ãƒ¼ãƒ 
     $('.search-keyword, .search-price, .original-code').on('keypress', function(e) {
         if (e.keyCode == 13) {
             $('.search-url')[0].click();
         }
     });
 
-    // ¥Ï¥ó¥Ğ¡¼¥¬¡¼¥á¥Ë¥å¡¼
+    // ãƒãƒ³ãƒãƒ¼ã‚¬ãƒ¼ãƒ¡ãƒ‹ãƒ¥ãƒ¼
     $('.openbtn').on('click', function() {
         $('body').toggleClass('scroll-stop');
         $(this).toggleClass('active');
         $('#g-nav').toggleClass('panelactive');
     });
 
-    // ¥µ¥¤¥É¥á¥Ë¥å¡¼¤òÊÄ¤¸¤ë
+    // ã‚µã‚¤ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’é–‰ã˜ã‚‹
     $('#g-nav-close').on('click', function() {
         $('body').removeClass('scroll-stop');
         $('.openbtn').removeClass('active');
@@ -45,7 +45,7 @@ $(function() {
         $('#g-nav').removeClass('panelactive');
     });
 
-// ¥µ¥¤¥É¥á¥Ë¥å¡¼¤Î¥«¥Æ¥´¥ê¡¼³«ÊÄ
+// ã‚µã‚¤ãƒ‰ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ã‚«ãƒ†ã‚´ãƒªãƒ¼é–‹é–‰
     $('.accordion').on('click', function() {
         $(this).toggleClass('on').next().slideToggle();
         $('.accordion').not(this).removeClass('on').next('.close').slideUp();
@@ -69,7 +69,7 @@ function MakeShop_afterListCartEntry(data){
         return false;
     }
 }
-// ¸¡º÷¥Ü¥Ã¥¯¥¹
+// æ¤œç´¢ãƒœãƒƒã‚¯ã‚¹
 $(function() {
     $('.search-keyword').on('keypress', function(e) {
         if (e.keyCode == 13) {
@@ -79,13 +79,13 @@ $(function() {
     });
 });
 
-// ¥¢¥¤¥³¥ó½Ğ¤·Æş¤ì
+// ã‚¢ã‚¤ã‚³ãƒ³å‡ºã—å…¥ã‚Œ
 let timeOut;
 
 $(window).on('scroll', function(){
-    var docHeight = $(document).innerHeight(), //¥É¥­¥å¥á¥ó¥È¤Î¹â¤µ
-        windowHeight = $(window).innerHeight(), //¥¦¥£¥ó¥É¥¦¤Î¹â¤µ
-        pageBottom = docHeight - windowHeight; //¥É¥­¥å¥á¥ó¥È¤Î¹â¤µ - ¥¦¥£¥ó¥É¥¦¤Î¹â¤µ
+    var docHeight = $(document).innerHeight(), //ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã®é«˜ã•
+        windowHeight = $(window).innerHeight(), //ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®é«˜ã•
+        pageBottom = docHeight - windowHeight; //ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã®é«˜ã• - ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®é«˜ã•
     $('.back-to-top'). addClass("back-to-top_dis");
     $('.newusr-trk'). addClass("newusr-trk_dis");
 	if(pageBottom <= $(window).scrollTop()) {
@@ -104,19 +104,19 @@ $(window).on('scroll', function(){
     }, 1000);
 });
 
-// ¥¹¥Ş¥Û¤Ç¸¡º÷Áë¤ò±£¤¹
+// ã‚¹ãƒãƒ›ã§æ¤œç´¢çª“ã‚’éš ã™
 var startPos = 0, winScrollTop = 0;
-// scroll¥¤¥Ù¥ó¥È¤òÀßÄê
+// scrollã‚¤ãƒ™ãƒ³ãƒˆã‚’è¨­å®š
 window.addEventListener('scroll', function () {
     winScrollTop = this.scrollY;
     if (winScrollTop >= startPos) {
-        // ²¼¤Ë¥¹¥¯¥í¡¼¥ë¤µ¤ì¤¿»ş
+        // ä¸‹ã«ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã•ã‚ŒãŸæ™‚
         if (winScrollTop >= 200) {
-            // ²¼¤Ë200px¥¹¥¯¥í¡¼¥ë¤µ¤ì¤¿¤é±£¤¹
+            // ä¸‹ã«200pxã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã•ã‚ŒãŸã‚‰éš ã™
             document.getElementById('scrollArea').classList.add('hide');
         }
     } else {
-        // ¾å¤Ë¥¹¥¯¥í¡¼¥ë¤µ¤ì¤¿»ş
+        // ä¸Šã«ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã•ã‚ŒãŸæ™‚
         document.getElementById('scrollArea').classList.remove('hide');
     }
     startPos = winScrollTop;

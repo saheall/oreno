@@ -90,7 +90,7 @@ $(function() {
 });
 
 
-// ¿ôÎÌÊÑ¹¹¥Ü¥¿¥ó
+// æ•°é‡å¤‰æ›´ãƒœã‚¿ãƒ³
 $(function() {
     $('.spinner_down').on('click', function() {
         var index = $('.spinner_down').index(this);
@@ -128,9 +128,9 @@ function spinner(counter, index){
 
 
 $('.accordion-titlechg').on('click', function () {
-  if ($('.item-accordion-att').text() === '²¡¤¹¤È³«¤­¤Ş¤¹') {
-    $('.item-accordion-att').text('²¡¤¹¤ÈÊÄ¤¸¤Ş¤¹');
+  if ($('.item-accordion-att').text() === 'æŠ¼ã™ã¨é–‹ãã¾ã™') {
+    $('.item-accordion-att').text('æŠ¼ã™ã¨é–‰ã˜ã¾ã™');
   } else {
-    $('.item-accordion-att').text('²¡¤¹¤È³«¤­¤Ş¤¹');
+    $('.item-accordion-att').text('æŠ¼ã™ã¨é–‹ãã¾ã™');
   }
 });

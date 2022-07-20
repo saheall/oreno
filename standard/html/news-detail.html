@@ -18,14 +18,14 @@
 <{$makeshop.head}>
 </head>
 <body>
-<!-- ¥È¥Ã¥×¤ËÌá¤ë¥Ü¥¿¥ó -->
+<!-- ãƒˆãƒƒãƒ—ã«æˆ»ã‚‹ãƒœã‚¿ãƒ³ -->
 <a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 <{$makeshop.body_top}>
 <{$module.header}>
 <div class="breadcrumb-area">
 	<div class="breadcrumb">
-		<span class="breadcrumb-item"><a href="<{$url.top}>">¥Û¡¼¥à</a></span>
-		<span class="breadcrumb-item"><a href="<{$url.news}>">¿·Ãå¾ðÊó°ìÍ÷</a></span>
+		<span class="breadcrumb-item"><a href="<{$url.top}>">ãƒ›ãƒ¼ãƒ </a></span>
+		<span class="breadcrumb-item"><a href="<{$url.news}>">æ–°ç€æƒ…å ±ä¸€è¦§</a></span>
 		<span class="breadcrumb-item breadcrumb-item-news-title"><{$news.title}></span>
 	</div>
 </div>
@@ -49,19 +49,19 @@
 							<{$news.content}>
 						</div>
 					</div>
-					<!--¥Ú¡¼¥¸¥ã¡¼-->
+					<!--ãƒšãƒ¼ã‚¸ãƒ£ãƒ¼-->
 					<ul class="news-pager">
 						<li class="pager-left">
 							<{if $news.prev_url}>
-								<a href="<{$news.prev_url}>"><p class="prev"><span class="news-left-cont"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left.png" class="icon_news_left"></span>Á°¤Îµ­»ö¤Ø</p></a>
+								<a href="<{$news.prev_url}>"><p class="prev"><span class="news-left-cont"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left.png" class="icon_news_left"></span>å‰ã®è¨˜äº‹ã¸</p></a>
 							<{else}>
-								<p class="prev news-empty">Á°¤Îµ­»ö¤Ï¤¢¤ê¤Þ¤»¤ó</p>
+								<p class="prev news-empty">å‰ã®è¨˜äº‹ã¯ã‚ã‚Šã¾ã›ã‚“</p>
 							<{/if}>
-							<li class="back"><a href="<{$url.news}>">¿·Ãå¾ðÊó°ìÍ÷¤Ø</a></li>
+							<li class="back"><a href="<{$url.news}>">æ–°ç€æƒ…å ±ä¸€è¦§ã¸</a></li>
 							<{if $news.next_url}>
-								<a href="<{$news.next_url}>"><p class="next">¼¡¤Îµ­»ö¤Ø<span class="news-right-cont"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png" class="icon_news_right"></span></p></a>
+								<a href="<{$news.next_url}>"><p class="next">æ¬¡ã®è¨˜äº‹ã¸<span class="news-right-cont"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png" class="icon_news_right"></span></p></a>
 							<{else}>
-								<p class="next news-empty">¼¡¤Îµ­»ö¤Ï¤¢¤ê¤Þ¤»¤ó</p>
+								<p class="next news-empty">æ¬¡ã®è¨˜äº‹ã¯ã‚ã‚Šã¾ã›ã‚“</p>
 							<{/if}>
 						</li>
 					</ul>
