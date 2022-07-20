@@ -17,11 +17,11 @@
 				<p class="item-sdisplay"><{$item.group.list[i].special_display}></p>
 			<{/if}>
 			<{if $item.group.list[i].is_sale}>
-				<p class="price original-price">¡ï<{$item.group.list[i].original_price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
-				<p class="price item-sale-price">¡ï<{$item.group.list[i].price|number_format}><span class="tax">¡ÊÀÇ¹þ¡Ë</span>
+				<p class="price original-price">ï¿¥<{$item.group.list[i].original_price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></p>
+				<p class="price item-sale-price">ï¿¥<{$item.group.list[i].price|number_format}><span class="tax">ï¼ˆç¨Žè¾¼ï¼‰</span>
 					<span class="sale-discount-rate">[<{$item.group.list[i].sale_rate}>%OFF</span>]</p>
 			<{else}>
-				<div class="price">¡ï<{$item.group.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></div>
+				<div class="price">ï¿¥<{$item.group.list[i].price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></div>
 			<{/if}>
 		</li>
 	<{/section}>

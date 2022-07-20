@@ -1,9 +1,9 @@
 <{if $item.review.is_enabled}>
 	<div class="item-review-detail">
-		<!--<h3>���ʥ�ӥ塼</h3>-->
+		<!--<h3>商品レビュー</h3>-->
 		<{if $item.review.has_item}>
 			<!--<div class="item-review-list-link">
-				<a href="<{$item.review.list_url}>">��ӥ塼����</a>
+				<a href="<{$item.review.list_url}>">レビュー一覧</a>
 			</div>-->
 			<{section name=i loop=$item.review.list}>
 				<table class="item-review-tbl" style="margin-bottom: 12px;">
@@ -43,7 +43,7 @@
 			<!--<ul class="item-review-list">
 				<{section name=i loop=$item.review.list}>
 					<li class="review-list-unit">
-						<p class="review-list-name"><span><{$item.review.list[i].reviewer_name}></span>����</p>
+						<p class="review-list-name"><span><{$item.review.list[i].reviewer_name}></span>さん</p>
 						<div class="star-score">
 							<div class="review-star"><{$item.review.list[i].star_html}></div>
 						</div>
@@ -53,10 +53,10 @@
 				<{/section}>
 			</ul>-->
 		<{else}>
-			<p class="item-review-detail-empty">��ӥ塼�Ϥޤ�����ޤ���</p>
+			<p class="item-review-detail-empty">レビューはまだありません</p>
 		<{/if}>
 		<p class="review-post">
-			<a href="<{$item.review.post_url}>">��ӥ塼���</a>
+			<a href="<{$item.review.post_url}>">レビューを書く</a>
 		</p>
 	</div>
 <{/if}>

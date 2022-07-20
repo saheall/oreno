@@ -18,7 +18,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-	font-family: 'Noto Serif', "ŞâÌÀÄ«", YuMincho, "Hiragino Mincho ProN W3", "¥Ò¥é¥®¥ÎÌÀÄ« ProN W3", "Hiragino Mincho ProN", "HGÌÀÄ«E", "£Í£Ó £ĞÌÀÄ«", "£Í£Ó ÌÀÄ«", serif;
+	font-family: 'Noto Serif', "æ¸¸æ˜æœ", YuMincho, "Hiragino Mincho ProN W3", "ãƒ’ãƒ©ã‚®ãƒæ˜æœ ProN W3", "Hiragino Mincho ProN", "HGæ˜æœE", "ï¼­ï¼³ ï¼°æ˜æœ", "ï¼­ï¼³ æ˜æœ", serif;
 	/*font-family:'Noto Serif', serif;*/
   /*font: inherit;*/
   vertical-align: baseline;
@@ -31,7 +31,7 @@ footer, footer_2, header, hgroup, menu, nav, section {
 
 body {
   color: #000;
-  font-family: 'Noto Serif', "ŞâÌÀÄ«", YuMincho, "Hiragino Mincho ProN W3", "¥Ò¥é¥®¥ÎÌÀÄ« ProN W3", "Hiragino Mincho ProN", "HGÌÀÄ«E", "£Í£Ó £ĞÌÀÄ«", "£Í£Ó ÌÀÄ«", serif;
+  font-family: 'Noto Serif', "æ¸¸æ˜æœ", YuMincho, "Hiragino Mincho ProN W3", "ãƒ’ãƒ©ã‚®ãƒæ˜æœ ProN W3", "Hiragino Mincho ProN", "HGæ˜æœE", "ï¼­ï¼³ ï¼°æ˜æœ", "ï¼­ï¼³ æ˜æœ", serif;
   /*font-family: 'Noto Serif', serif;*/
   font-size: 14px;
   line-height: 1.6;
@@ -316,7 +316,7 @@ header .header-menu {
   text-align: center;
   font-size: 12px;
   font-weight: normal;
-	font-family: "ŞâÌÀÄ«", YuMincho, "Hiragino Mincho ProN W3", "¥Ò¥é¥®¥ÎÌÀÄ« ProN W3", "Hiragino Mincho ProN", "HGÌÀÄ«E", "£Í£Ó £ĞÌÀÄ«", "£Í£Ó ÌÀÄ«", serif;
+	font-family: "æ¸¸æ˜æœ", YuMincho, "Hiragino Mincho ProN W3", "ãƒ’ãƒ©ã‚®ãƒæ˜æœ ProN W3", "Hiragino Mincho ProN", "HGæ˜æœE", "ï¼­ï¼³ ï¼°æ˜æœ", "ï¼­ï¼³ æ˜æœ", serif;
 }
 @media screen and (max-width: 1024px) {
   .header-cart .cart-count {
@@ -819,7 +819,7 @@ input.search-price {
 }
 
 .news-content:after {
-  content: "¡Ä";
+  content: "â€¦";
 }
 
 
@@ -1122,7 +1122,7 @@ footer {
   width: 100%;
 }
 
-/*¥¹¥é¥¤¥À¡¼css*/
+/*ã‚¹ãƒ©ã‚¤ãƒ€ãƒ¼css*/
 .gallery li {
   list-style: none;
 }
@@ -1218,7 +1218,7 @@ footer {
   opacity: 1;
 }
 
-/*ÄÉ²Ã*/
+/*è¿½åŠ */
 .slick-slider {
   position: relative;
   display: block;
@@ -1324,7 +1324,7 @@ footer {
   display: none;
 }
 
-/*¥¹¥é¥¤¥À¡¼css¤³¤³¤Ş¤Ç*/
+/*ã‚¹ãƒ©ã‚¤ãƒ€ãƒ¼cssã“ã“ã¾ã§*/
 .add-image-section {
   margin-bottom: 40px;
 }
@@ -1796,7 +1796,7 @@ footer {
   color: fff;
 }
 
-/*Äê´ü¹ØÆş*/
+/*å®šæœŸè³¼å…¥*/
 .product-price-block {
   font-size: 30px;
   margin: 12px 0;
@@ -2488,7 +2488,7 @@ footer {
   #g-nav.panelactive .g-nav-sp{
     left: 0;
   }
-  /*¥Ü¥¿¥ó*/
+  /*ãƒœã‚¿ãƒ³*/
   .openbtn {
     position: relative;
     z-index: 9999;
@@ -3021,7 +3021,7 @@ footer {
     margin-bottom: 30px !important;
   }
   .item-cart-subtotal::before {
-    content: "¾®·×";
+    content: "å°è¨ˆ";
     font-size: 14px;
   }
 
@@ -3482,13 +3482,13 @@ footer {
   background-color: #c4c4c4;
 }
 
-/*¥¢¥³¡¼¥Ç¥£¥ª¥óÁ´ÂÎ*/
+/*ã‚¢ã‚³ãƒ¼ãƒ‡ã‚£ã‚ªãƒ³å…¨ä½“*/
 .menu-side {
 }
 .menu-side input {
-  display: none; /*¥Á¥§¥Ã¥¯¥Ü¥Ã¥¯¥¹¤ò±£¤¹*/
+  display: none; /*ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã‚’éš ã™*/
 }
-/*¥Ğ¡¼ÉôÊ¬*/
+/*ãƒãƒ¼éƒ¨åˆ†*/
 .menu-side label {
   cursor :pointer;
   display: flex;
@@ -3501,7 +3501,7 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 }
-/*³«¤¤¤¿¤È¤­¤ËÉ½¼¨¤µ¤ì¤ëÉôÊ¬*/
+/*é–‹ã„ãŸã¨ãã«è¡¨ç¤ºã•ã‚Œã‚‹éƒ¨åˆ†*/
 .menu-side-list {
   margin: 0;
   padding: 0;
@@ -3522,7 +3522,7 @@ footer {
   background: #fff;
   padding-top: 20px;
 }
-/*ÊÄ¤¸¤¿¾õÂÖ¤ÎÌğ°õÉÁ²è*/
+/*é–‰ã˜ãŸçŠ¶æ…‹ã®çŸ¢å°æç”»*/
 .menu-side-accordion-item .toggle-icon{
   content: "";
   display: block;
@@ -3533,7 +3533,7 @@ footer {
   background-size: contain;
   transition: .3s;
 }
-/*³«¤¤¤¿¾õÂÖ¤ÎÌğ°õÉÁ²è*/
+/*é–‹ã„ãŸçŠ¶æ…‹ã®çŸ¢å°æç”»*/
 .menu-side-input:checked + label .toggle-icon{
   transform: rotate(-180deg);
 }
@@ -3658,7 +3658,7 @@ footer {
   background:none;
   color:#666;
   border:none;
-  font-size:20px;/*¥¢¥¤¥³¥ó¥µ¥¤¥º*/
+  font-size:20px;/*ã‚¢ã‚¤ã‚³ãƒ³ã‚µã‚¤ã‚º*/
 }
 @media screen and (max-width: 1024px) {
   .search-keyword{
@@ -3677,7 +3677,7 @@ footer {
 		background:none;
 		color:#666;
 		border:none;
-		font-size:20px;/*¥¢¥¤¥³¥ó¥µ¥¤¥º*/
+		font-size:20px;/*ã‚¢ã‚¤ã‚³ãƒ³ã‚µã‚¤ã‚º*/
 	}
 }
 #sbtn5:hover{
@@ -3854,10 +3854,10 @@ color:#7fbfff;
 }
 
 .hide{
-	transform: translateY(-100%); /* ¾å¤Ë¾Ã¤¨¤ë¤è¤¦¤Ë¤¹¤ë */
+	transform: translateY(-100%); /* ä¸Šã«æ¶ˆãˆã‚‹ã‚ˆã†ã«ã™ã‚‹ */
 }
 
-/* selectÍÑ */
+/* selectç”¨ */
 .slectlibox {
 	order: 3;
   width: 192px;

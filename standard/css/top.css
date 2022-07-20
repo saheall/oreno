@@ -22,16 +22,16 @@
 }
 .bx-viewport{
     overflow: visible !important;
-    width: 720px !important; /* ¥¹¥é¥¤¥É²èÁü¤Î²£Éı */
+    width: 720px !important; /* ã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹… */
     margin: 0 auto;
 }
 #wrap .bx-prev{
     left: 50% !important;
-    margin-left:-376px; /*¡Ê¥¹¥é¥¤¥É²èÁü¤Î²£Éı¡à2¡Ë+¡ÊÌğ°õ²èÁü¤Î²£Éı¡à2¡Ë */
+    margin-left:-376px; /*ï¼ˆã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰+ï¼ˆçŸ¢å°ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰ */
 }
 #wrap .bx-next{
     right: 50% !important;
-    margin-right:-376px; /*¡Ê¥¹¥é¥¤¥É²èÁü¤Î²£Éı¡à2¡Ë+¡ÊÌğ°õ²èÁü¤Î²£Éı¡à2¡Ë */
+    margin-right:-376px; /*ï¼ˆã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰+ï¼ˆçŸ¢å°ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰ */
 }
 #M_slider {
     height: 100%;
@@ -79,7 +79,7 @@
 	}
 	.bx-viewport{
 		overflow: visible !important;
-		width: 85.07vw !important; /* ¥¹¥é¥¤¥É²èÁü¤Î²£Éı */
+		width: 85.07vw !important; /* ã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹… */
 		margin: 0 auto;
 	}
     #M_slider {
@@ -97,11 +97,11 @@
     }
 	#wrap .bx-prev{
 		left: 50% !important;
-		margin-left:-175.5px; /*¡Ê¥¹¥é¥¤¥É²èÁü¤Î²£Éı¡à2¡Ë+¡ÊÌğ°õ²èÁü¤Î²£Éı¡à2¡Ë */
+		margin-left:-175.5px; /*ï¼ˆã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰+ï¼ˆçŸ¢å°ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰ */
 	}
 	#wrap .bx-next{
 		right: 50% !important;
-		margin-right:-175.5px; /*¡Ê¥¹¥é¥¤¥É²èÁü¤Î²£Éı¡à2¡Ë+¡ÊÌğ°õ²èÁü¤Î²£Éı¡à2¡Ë */
+		margin-right:-175.5px; /*ï¼ˆã‚¹ãƒ©ã‚¤ãƒ‰ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰+ï¼ˆçŸ¢å°ç”»åƒã®æ¨ªå¹…Ã·2ï¼‰ */
 	}
 	.bx-controls-direction {
 		display: none;
@@ -528,10 +528,10 @@
 	}
 }
 
-/* CSS¥¢¥Ë¥á¡¼¥·¥ç¥ó¤ÎÀßÄê */
+/* CSSã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­å®š */
 @keyframes SlideIn {
 	0% {
-		opacity: 1;/*½é´ü¾õÂÖ*/
+		opacity: 1;/*åˆæœŸçŠ¶æ…‹*/
 		transform: translateX(350px);
 	}
 	100% {
@@ -541,7 +541,7 @@
 }
 @keyframes SlideIn-sp {
 	0% {
-		opacity: 1;/*½é´ü¾õÂÖ*/
+		opacity: 1;/*åˆæœŸçŠ¶æ…‹*/
 		transform: translateY(91px);
 	}
 	100% {
@@ -560,10 +560,10 @@
 		animation: slide-out-anim-sp 1s;
 	}
 }
-/* CSS¥¢¥Ë¥á¡¼¥·¥ç¥ó¤ÎÀßÄê */
+/* CSSã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®è¨­å®š */
 @keyframes slide-out-anim {
 	0% {
-		opacity: 1;/*½é´ü¾õÂÖ¤Ç¤ÏÆ©ÌÀ¤Ë*/
+		opacity: 1;/*åˆæœŸçŠ¶æ…‹ã§ã¯é€æ˜ã«*/
 		transform: translateX(0);
 	}
 	100% {
@@ -573,7 +573,7 @@
 }
 @keyframes slide-out-anim-sp {
 	0% {
-		opacity: 1;/*½é´ü¾õÂÖ¤Ç¤ÏÆ©ÌÀ¤Ë*/
+		opacity: 1;/*åˆæœŸçŠ¶æ…‹ã§ã¯é€æ˜ã«*/
 		transform: translateY(0);
 	}
 	100% {

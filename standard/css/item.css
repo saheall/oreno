@@ -39,11 +39,11 @@
 	margin-top: 4px;
 	line-height: 18px;
 }
-/* モ〖ダルCSS */
+/* 銉€兗銉�銉獵SS */
 .modal-area {
   display: none;
   position: fixed;
-  z-index: 10; /*サイトによってここの眶猛は拇腊 */
+  z-index: 10; /*銈点偆銉堛伀銈堛仯銇︺亾銇撱伄鏁板�ゃ伅瑾挎暣 */
   top: 0;
   left: 0;
   width: 100%;
@@ -292,7 +292,7 @@
 .accordion-item {
 	padding-bottom: 88px;
 }
-/* タイトルの秦肥咖 */
+/* 銈裤偆銉堛儷銇儗鏅壊 */
 .accordion-item .accordion-title {
   background-color: #fff;
 	color: #000;
@@ -301,10 +301,10 @@
 	border-bottom: 1px solid #000;
 	padding: 0 0 8px 0;
 }
-/* コンテンツボックスの先俐 */
+/* 銈炽兂銉嗐兂銉勩儨銉冦偗銈广伄鏋犵窔 */
 .accordion-item .accordion-content {
 }
-/* 甜磅 */
+/* 鐭㈠嵃 */
 .accordion-title {
   position: relative;
 }
@@ -693,7 +693,7 @@
 		font-size: 14px;
 		font-weight: normal;
 	}
-	/* スピナ〖 */
+	/* 銈广償銉娿兗 */
 	.spinner-container {
 		display: flex;
 		justify-content: center;
@@ -740,7 +740,7 @@
 		opacity: 0.3;
 		cursor: inherit;
 	}
-	/* スピナ〖 */
+	/* 銈广償銉娿兗 */
 
 
 

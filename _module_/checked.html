@@ -17,11 +17,11 @@
 					<p class="item-sdisplay"><{$recently_item.list[i].special_display}></p>
 				<{/if}>
 				<{if $recently_item.list[i].is_sale}>
-					<p class="price original-price" style="text-align: left;">¡ï<{$recently_item.list[i].original_price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
-					<p class="price item-sale-price" style="text-align: left;">¡ï<{$recently_item.list[i].price|number_format}><span class="tax">¡ÊÀÇ¹þ¡Ë</span>
+					<p class="price original-price" style="text-align: left;">ï¿¥<{$recently_item.list[i].original_price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></p>
+					<p class="price item-sale-price" style="text-align: left;">ï¿¥<{$recently_item.list[i].price|number_format}><span class="tax">ï¼ˆç¨Žè¾¼ï¼‰</span>
 					<span class="sale-discount-rate">[<{$recently_item.list[i].sale_rate}>%OFF</span>]</p>
 				<{else}>
-					<p class="price" style="text-align: left;">¡ï<{$recently_item.list[i].price|number_format}><span>¡ÊÀÇ¹þ¡Ë</span></p>
+					<p class="price" style="text-align: left;">ï¿¥<{$recently_item.list[i].price|number_format}><span>ï¼ˆç¨Žè¾¼ï¼‰</span></p>
 				<{/if}>
 			</li>
 		<{/section}>
