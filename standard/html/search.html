@@ -20,7 +20,7 @@
 
 <body>
 <!-- トップに戻るボタン -->
-<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
+<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 <{$makeshop.body_top}>
 <{$module.header}>
 
@@ -64,7 +64,7 @@
 				<div class="pager-wrap cot-sp pgt">
 					<{if $search.pager.has_item}>
 						<ul class="pager search-list-pager">
-							<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
+							<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
 							<{if !$search.pager.is_first_display}>
 								<li><a href="<{$search.pager.first_url}>" class="pglink"><span class="btn-prev">1</span></a></li>
 							<{/if}>
@@ -78,7 +78,7 @@
 							<{if !$search.pager.is_last_display}>
 								<li><a href="<{$search.pager.last_url}>" class="pglink"><span class="btn-next"><{$search.pager.last_number}></span></a></li>
 							<{/if}>
-							<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
+							<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
 						</ul>
 					<{/if}>
 				</div>
@@ -117,7 +117,7 @@
 					<div class="pager-wrap cot-pc">
 						<{if $search.pager.has_item}>
 							<ul class="pager">
-								<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
+								<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
 								<{section name=i loop=$search.pager.list}>
 									<{if $search.pager.list[i].is_current_page}>
 										<li><span class="current"><{$search.pager.list[i].number}></span></li>
@@ -125,14 +125,14 @@
 										<li><a href="<{$search.pager.list[i].url}>"><span><{$search.pager.list[i].number}></span></a></li>
 									<{/if}>
 								<{/section}>
-								<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
+								<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
 							</ul>
 						<{/if}>
 					</div>
 					<div class="pager-wrap cot-sp">
 						<{if $search.pager.has_item}>
 							<ul class="pager search-list-pager">
-								<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
+								<li><a class="pager_prev" href="<{$search.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left1.svg" class="news-left-cont"></a></li>
 								<{if !$search.pager.is_first_display}>
 									<li><a href="<{$search.pager.first_url}>" class="pglink"><span class="btn-prev">1</span></a></li>
 								<{/if}>
@@ -146,7 +146,7 @@
 								<{if !$search.pager.is_last_display}>
 									<li><a href="<{$search.pager.last_url}>" class="pglink"><span class="btn-next"><{$search.pager.last_number}></span></a></li>
 								<{/if}>
-								<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
+								<li><a class="pager_next" style="margin-left: -14px;" href="<{$search.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right1.svg" class="news-right-cont"></a></li>
 							</ul>
 						<{/if}>
 					</div>

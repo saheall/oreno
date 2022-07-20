@@ -2,7 +2,7 @@
     transition: 0s !important;
 }
 .bx-next {
-    background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/slider_next.png)!important;
+    background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/slider_next.png)!important;
     background-size: contain!important;
     width: 56px!important;
     height: 56px!important;
@@ -10,7 +10,7 @@
 		top: calc(50% - 50px)!important;
 }
 .bx-prev {
-    background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/slider_prev.png)!important;
+    background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/slider_prev.png)!important;
     background-size: contain!important;
     width: 56px!important;
     height: 56px!important;
@@ -138,7 +138,7 @@
     content: none;
 }
 .slick-next:before{
-    background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/slider_next.png)!important;
+    background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/slider_next.png)!important;
     background-size: contain!important;
     opacity: 1 !important;
 }
@@ -146,7 +146,7 @@
     content: none;
 }
 .slick-prev:before{
-    background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/slider_prev.png)!important;
+    background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/slider_prev.png)!important;
     background-size: contain!important;
     opacity: 1 !important;
 }

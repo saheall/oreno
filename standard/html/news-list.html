@@ -20,7 +20,7 @@
 
 <body>
 	<!--   トップに戻るボタン -->
-	<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
+	<a href="#" class="back-to-top js-to-top"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_gototop.png" srcset="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_gototop-x3.png 2x" style="width: 48px; height:48px;"></a>
 	<{$makeshop.body_top}>
 	<{$module.header}>
 	<div class="breadcrumb-area">
@@ -41,7 +41,7 @@
 					<div class="pager-wrap cot-sp pgt">
 						<{if $news.pager.has_item}>
 							<ul class="pager news-list-pager">
-								<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left.png"></a>
+								<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left.png"></a>
 								<{if !$news.pager.is_first_display}>
 									<li><a href="<{$news.pager.first_url}>" class="pglink"><span class="btn-prev">1</span></a></li>
 								<{/if}>
@@ -55,7 +55,7 @@
 								<{if !$news.pager.is_last_display}>
 									<li><a href="<{$news.pager.last_url}>" class="pglink"><span class="btn-next"><{$news.pager.last_number}></span></a></li>
 								<{/if}>
-								<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png"></a>
+								<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right.png"></a>
 							</ul>
 						<{/if}>
 					</div>
@@ -75,7 +75,7 @@
 											</div>
 										</div>
 										<div class="news-list-arrow">
-											<img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png" width="8px" height="15px" alt="">
+											<img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right.png" width="8px" height="15px" alt="">
 										</div>
 									</a>
 									<div class="news-hr-gray"></div>
@@ -86,7 +86,7 @@
 						<div class="pager-wrap cot-pc">
 							<{if $news.pager.has_item}>
 								<ul class="pager news-list-pager">
-									<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left.png"></a>
+									<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left.png"></a>
 									<{section name=i loop=$news.pager.list}>
 										<{if $news.pager.list[i].is_current_page}>
 											<li><span class="current"><{$news.pager.list[i].number}></span></li>
@@ -94,14 +94,14 @@
 											<li><a href="<{$news.pager.list[i].url}>"><span><{$news.pager.list[i].number}></span></a></li>
 										<{/if}>
 									<{/section}>
-									<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png"></a>
+									<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right.png"></a>
 								</ul>
 							<{/if}>
 						</div>
 						<div class="pager-wrap cot-sp">
 							<{if $news.pager.has_item}>
 								<ul class="pager news-list-pager">
-									<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_left.png"></a>
+									<a class="news-left-cont" href="<{$news.pager.prev_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_left.png"></a>
 									<{if !$news.pager.is_first_display}>
 										<li><a href="<{$news.pager.first_url}>" class="pglink"><span class="btn-prev">1</span></a></li>
 									<{/if}>
@@ -115,7 +115,7 @@
 									<{if !$news.pager.is_last_display}>
 										<li><a href="<{$news.pager.last_url}>" class="pglink"><span class="btn-next"><{$news.pager.last_number}></span></a></li>
 									<{/if}>
-									<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_right.png"></a>
+									<a class="news-right-cont" style="margin-left: 0px;" href="<{$news.pager.next_url}>"><img src="https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_right.png"></a>
 								</ul>
 							<{/if}>
 						</div>

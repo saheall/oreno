@@ -662,7 +662,7 @@
 	}
 	.fnavi .btn:before,
 	.fnavi-sub .btn:before {
-		content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_itemcrt.svg");
+		content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_itemcrt.svg");
 		padding: 0 16px 0 0;
 		position: relative;
 		top: 6px;
@@ -970,12 +970,12 @@
 	font-family: 'Noto Sans JP' !important;
 }
 .facebool-fan:before {
-	content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_fb-g.svg");
+	content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_fb-g.svg");
 	padding-right: 10px;
 	margin-top: 5px;
 }
 .item-fan:before {
-	content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_hrt2.svg");
+	content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_hrt2.svg");
 	padding-right: 10px;
 	margin-top: 5px;
 }
@@ -991,7 +991,7 @@
 	font-weight: 700;
 }
 .item-cart:before {
-	content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_itemcrt.svg");
+	content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_itemcrt.svg");
 	padding-right: 16px;
 	margin-top: 4px;
 }
@@ -1009,7 +1009,7 @@
   box-sizing: border-box;
 }
 .item-cont:before {
-	content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_itemmail.svg");
+	content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_itemmail.svg");
 	padding-right: 10px;
 	margin-top: 6px;
 }
@@ -1186,7 +1186,7 @@
 	font-weight: bold;
 }
 .item-soldout:before {
-	content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_itemsldo.svg");
+	content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_itemsldo.svg");
 	padding-right: 16px;
 	margin-top: 4px;
 }
@@ -1203,7 +1203,7 @@
 		font-weight: bold;
 	}
 	.item-soldout:before {
-		content: url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_itemsldo.svg") !important;
+		content: url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_itemsldo.svg") !important;
 		padding-right: 8px !important;
 		margin-top: 6px;
 		position: unset !important;

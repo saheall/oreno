@@ -254,7 +254,7 @@ header .header-menu {
 .header-mypage a:before {
   font-family: 'Font Awesome 5 Free';
   content: "\f007";
-	background-image:url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_user.svg");
+	background-image:url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_user.svg");
 	background-repeat: no-repeat;
 	background-position: center;
   font-size: 16px;
@@ -264,7 +264,7 @@ header .header-menu {
 .header-cart a:before {
   font-family: 'Font Awesome 5 Free';
   content: "\f07a";
-	background-image:url("https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_cart.svg");
+	background-image:url("https://gigaplus.makeshop.jp/orenoec/images/icon/icon_cart.svg");
 	background-repeat: no-repeat;
 	background-position: center;
   font-size: 16px;
@@ -3529,7 +3529,7 @@ footer {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_arrow_bottom.png) center no-repeat;
+  background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/icon_arrow_bottom.png) center no-repeat;
   background-size: contain;
   transition: .3s;
 }
@@ -3688,7 +3688,7 @@ color:#7fbfff;
   display: block;
   width: 24px;
   height: 24px;
-  background: url(https://gigaplus.makeshop.jp/orenoec1/images/icon/icon_search.png) center no-repeat;
+  background: url(https://gigaplus.makeshop.jp/orenoec/images/icon/icon_search.png) center no-repeat;
   background-size: contain;
 }
 .Arrow-Bottom {
@@ -3814,7 +3814,7 @@ color:#7fbfff;
 	width: 98px;
 	height: 42px;
 	line-height: 42px;
-	background-image: url(https://gigaplus.makeshop.jp/orenoec1/images/logo/logo_instaoreno.png);
+	background-image: url(https://gigaplus.makeshop.jp/orenoec/images/logo/logo_instaoreno.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	font-family: 'Noto Serif JP';
